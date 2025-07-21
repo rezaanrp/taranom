@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="login">
+  <DataContextMoniker Name="/loginDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aa3328be-9622-4165-8a2d-f8fbb2c83d06" absoluteBounds="3.125, 2.375, 2, 1.7535424804687496">
+      <DataClassMoniker Name="/loginDataContext/mallowaccestouser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="653fea0b-48cc-4980-b976-84aecad6998d" absoluteBounds="3.1399999999999997, 2.835, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88c354d1-a96a-4371-ae50-61a7f714511c" absoluteBounds="0.5, 3.5, 2, 1.2605004882812496">
+      <DataClassMoniker Name="/loginDataContext/allowobject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4d521eb-4a52-4685-b65f-484271909939" absoluteBounds="0.51500000000000012, 3.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.91909912109375); (3.125 : 3.91909912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/loginDataContext/allowobject/allowobject_mallowaccestouser" />
+      <nodes>
+        <classShapeMoniker Id="88c354d1-a96a-4371-ae50-61a7f714511c" />
+        <classShapeMoniker Id="aa3328be-9622-4165-8a2d-f8fbb2c83d06" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="05f575cf-095c-415c-8045-d3b88f3e1c5e" absoluteBounds="0.5, 0.625, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/loginDataContext/tablelogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4050ebe7-ae60-4f98-839a-063ff85655c9" absoluteBounds="0.51500000000000012, 1.085, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.51044840494792); (2.8 : 1.51044840494792); (2.8 : 3.35659912109375); (3.125 : 3.35659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/loginDataContext/tablelogin/tablelogin_mallowaccestouser" />
+      <nodes>
+        <classShapeMoniker Id="05f575cf-095c-415c-8045-d3b88f3e1c5e" />
+        <classShapeMoniker Id="aa3328be-9622-4165-8a2d-f8fbb2c83d06" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0f2a38ec-6003-431a-b951-5f77e1d043bf" absoluteBounds="4, 0.625, 2, 1.424847819010417">
+      <DataClassMoniker Name="/loginDataContext/mservice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9241809-7ddb-4201-bc6f-79c76e1d3636" absoluteBounds="4.015, 1.085, 1.9700000000000002, 0.86484781901041663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Datalinqtrubleshooting">
+  <DataContextMoniker Name="/DatalinqtrubleshootingDataContext" />
+  <nestedChildShapes>
+    <classShape Id="14c88685-e5dd-490a-b61a-6a85a7a34ae8" absoluteBounds="0.875, 1.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DatalinqtrubleshootingDataContext/tsolutionfortruble" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9205804e-977a-4553-a449-25750a91b33b" absoluteBounds="0.89000000000000012, 2.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="052046c5-4252-4c4f-a167-7ba1011cfbcb" absoluteBounds="4, 1.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DatalinqtrubleshootingDataContext/ttruble_shooting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99f7a97d-5b82-45fd-aa74-e3e5260c17dc" absoluteBounds="4.015, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.69931705603966 : 3.1362939453125); (4.69931705603966 : 3.3862939453125); (5.31500117938702 : 3.3862939453125); (5.31500117938702 : 3.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DatalinqtrubleshootingDataContext/ttruble_shooting/ttruble_shooting_ttruble_shooting" />
+      <nodes>
+        <classShapeMoniker Id="052046c5-4252-4c4f-a167-7ba1011cfbcb" />
+        <classShapeMoniker Id="052046c5-4252-4c4f-a167-7ba1011cfbcb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

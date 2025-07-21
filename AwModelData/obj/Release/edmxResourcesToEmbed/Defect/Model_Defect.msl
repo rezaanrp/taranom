@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PayazobModelStoreContainer" CdmEntityContainer="PayazobEntities">
+    <FunctionImportMapping FunctionImportName="SelectDefectByDateGroupPieces" FunctionName="PayazobModel.Store.SelectDefectByDateGroupPieces">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PayazobModel.ComplexType1">
+          <ScalarProperty Name="PieceProductCount" ColumnName="PieceProductCount" />
+          <ScalarProperty Name="ControlledNumber" ColumnName="ControlledNumber" />
+          <ScalarProperty Name="Piece" ColumnName="Piece" />
+          <ScalarProperty Name="ControlledNumberweight" ColumnName="ControlledNumberweight" />
+          <ScalarProperty Name="CountPieces" ColumnName="CountPieces" />
+          <ScalarProperty Name="DefectNumber" ColumnName="DefectNumber" />
+          <ScalarProperty Name="DefectNumberweight" ColumnName="DefectNumberweight" />
+          <ScalarProperty Name="DefectPrecent" ColumnName="DefectPrecent" />
+          <ScalarProperty Name="CountProductWeight" ColumnName="CountProductWeight" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

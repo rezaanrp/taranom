@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FBF2FB3-221E-4319-A2B5-4607D4BA2F66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TARANOM</RootNamespace>
+    <AssemblyName>TARANOM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\REZA\Desktop\2304\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>2.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>factory.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B4C62F4C81F5138D0468E046E46EA34D3A00530D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Payazob_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=5.6.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.6.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiMessageBox">
+      <HintPath>..\dll\FarsiMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="GlassButton">
+      <HintPath>..\GlassButton\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Conversion.v4.0" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net40\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ShDateTimePicker">
+      <HintPath>dll\ShDateTimePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TxtProNetV3">
+      <HintPath>..\dll\TxtProNetV3.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CS\csDataGridView.cs" />
+    <Compile Include="CS\csDateform.cs" />
+    <Compile Include="CS\csDic.cs" />
+    <Compile Include="CS\csEnum.cs" />
+    <Compile Include="CS\csExeclToDataGridView.cs" />
+    <Compile Include="CS\csGenDataTable.cs" />
+    <Compile Include="CS\csReportForm.cs" />
+    <Compile Include="CS\csSearchTreeView.cs" />
+    <Compile Include="CS\csTsmiShow.cs" />
+    <Compile Include="FRM\frmDate\frmDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\frmDate\frmDate.Designer.cs">
+      <DependentUpon>frmDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmCustomerCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmCustomerCode.Designer.cs">
+      <DependentUpon>frmCustomerCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmSelectExcelSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmSelectExcelSheet.Designer.cs">
+      <DependentUpon>frmSelectExcelSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmWareHouseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmWareHouseStock.Designer.cs">
+      <DependentUpon>frmWareHouseStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmWareHouseStockSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\WareHouseStock\frmWareHouseStockSetting.Designer.cs">
+      <DependentUpon>frmWareHouseStockSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\CustomToolTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\CustomToolTip.Designer.cs">
+      <DependentUpon>CustomToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\DataGridViewMaskedTextCell.cs" />
+    <Compile Include="MyControl\DataGridViewMaskedTextColumn.cs" />
+    <Compile Include="MyControl\DataGridViewMaskedTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\GridTimeControl.cs" />
+    <Compile Include="MyControl\GridTimeControl.Designer.cs">
+      <DependentUpon>GridTimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ReferencedDescriptionAttribute.cs" />
+    <Compile Include="MyControl\ucSubmenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ucSubmenu.Designer.cs">
+      <DependentUpon>ucSubmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csCheakTextbox.cs" />
+    <Compile Include="CS\csMessage.cs" />
+    <Compile Include="CS\csOpenForm.cs" />
+    <Compile Include="CS\SandMaterialUsage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRM\frmDate\frmDate.resx">
+      <DependentUpon>frmDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\WareHouseStock\frmCustomerCode.resx">
+      <DependentUpon>frmCustomerCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\WareHouseStock\frmSelectExcelSheet.resx">
+      <DependentUpon>frmSelectExcelSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\WareHouseStock\frmWareHouseStock.resx">
+      <DependentUpon>frmWareHouseStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\WareHouseStock\frmWareHouseStockSetting.resx">
+      <DependentUpon>frmWareHouseStockSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\CustomToolTip.resx">
+      <DependentUpon>CustomToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ucSubmenu.resx">
+      <DependentUpon>ucSubmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Payazob_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\AwModelData.Aid.mGenGroup.datasource" />
+    <None Include="Properties\DataSources\AwModelData.Aid.mPersonInfo.datasource" />
+    <None Include="Properties\DataSources\AwModelData.Aid.mSectionAid.datasource" />
+    <None Include="Properties\DataSources\AwModelData.Aid.PayazobEntities1.datasource" />
+    <None Include="Properties\DataSources\AwModelData.Class1.datasource" />
+    <None Include="Properties\DataSources\DAL.DataSet_ShiftTableAdapters.mShiftTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.DataSet_ShiftTableAdapters.SelectmShiftAndNameUserTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.DataSet_ShiftTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\DAL.DataSet_ShiftTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\DAL.Person.DataSet_PersonInfo+mPersonInfoDataTable.datasource" />
+    <None Include="Properties\DataSources\DAL.Person.DataSet_PersonInfoTableAdapters.mPersonInfoTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.Sand.DataSet_SandDailyReport+SlSandDailyTestSpcDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RPT\reportservice.mrt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{D909B9D2-4EA0-4C0C-8588-B9D4A98C5BDE}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlLibrary\ControlLibrary.csproj">
+      <Project>{86D61CA8-D8D4-4E31-A740-0E2548E6B4DC}</Project>
+      <Name>ControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{F0274000-1FF3-423E-B3E7-B76A5905BB4F}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLQ\DLQ.csproj">
+      <Project>{56932A58-1CE6-4EF5-946E-31220423BC20}</Project>
+      <Name>DLQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools.rtv\Tools.rtv.csproj">
+      <Project>{1151ECF2-2B76-4319-AB6F-CC484B4A85F3}</Project>
+      <Name>Tools.rtv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validation\Validation.csproj">
+      <Project>{BAD64A31-79D2-408C-A438-2C57CC28571D}</Project>
+      <Name>Validation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyControl\Resources\Payazob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="factory.ico" />
+    <Content Include="MyControl\ExtendedControls.dll" />
+    <None Include="Resources\lists1.png" />
+    <None Include="Resources\lists.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\sad.png" />
+    <None Include="Resources\narahat.png" />
+    <None Include="Resources\like.png" />
+    <None Include="Resources\labkhand.png" />
+    <None Include="Resources\khande.png" />
+    <None Include="Resources\cry.png" />
+    <None Include="Resources\cheshmak.png" />
+    <None Include="Resources\asabani.png" />
+    <None Include="Resources\akh.png" />
+    <None Include="Resources\abadan.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\date_32.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\logo1.gif" />
+    <None Include="Resources\logo.gif" />
+    <None Include="Resources\edit_undo.png" />
+    <None Include="Resources\tree_diagramm.png" />
+    <None Include="Resources\attention.png" />
+    <None Include="Resources\gnome_lockscreen1.png" />
+    <None Include="Resources\gnome_lockscreen.png" />
+    <None Include="Resources\save_as.png" />
+    <None Include="Resources\mailbox_1.png" />
+    <None Include="Resources\decrease.png" />
+    <None Include="Resources\mail_replay1.png" />
+    <None Include="Resources\e_mail1.png" />
+    <None Include="Resources\mail_new.png" />
+    <None Include="Resources\MailBox.gif" />
+    <None Include="Resources\mail_replay.png" />
+    <None Include="Resources\e_mail %281%29.png" />
+    <None Include="Resources\e_mail.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\Payazob1.png" />
+    <None Include="Resources\excel1.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyControl\Chart\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

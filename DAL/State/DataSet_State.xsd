@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_State" targetNamespace="http://tempuri.org/DataSet_State.xsd" xmlns:mstns="http://tempuri.org/DataSet_State.xsd" xmlns="http://tempuri.org/DataSet_State.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PayazobConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PayazobConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.PayazobConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mStateTableAdapter" GeneratorDataComponentClassName="mStateTableAdapter" Name="mState" UserDataComponentName="mStateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.mState" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        x_, xName
+FROM            mState</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xName" DataSetColumn="xName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_State" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_State" msprop:Generator_UserDSName="DataSet_State">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mState" msprop:Generator_TableClassName="mStateDataTable" msprop:Generator_TableVarName="tablemState" msprop:Generator_TablePropName="mState" msprop:Generator_RowDeletingName="mStateRowDeleting" msprop:Generator_RowChangingName="mStateRowChanging" msprop:Generator_RowEvHandlerName="mStateRowChangeEventHandler" msprop:Generator_RowDeletedName="mStateRowDeleted" msprop:Generator_UserTableName="mState" msprop:Generator_RowChangedName="mStateRowChanged" msprop:Generator_RowEvArgName="mStateRowChangeEvent" msprop:Generator_RowClassName="mStateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xName" msprop:Generator_ColumnVarNameInTable="columnxName" msprop:Generator_ColumnPropNameInRow="xName" msprop:Generator_ColumnPropNameInTable="xNameColumn" msprop:Generator_UserColumnName="xName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mState" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

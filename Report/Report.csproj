@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E66805DE-D34C-4D6B-A1DA-BE82AC0458CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Report</RootNamespace>
+    <AssemblyName>Report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart_ProcessControl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Chart_ProcessControl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="crsPiecesProductPlanTotal_Machining.cs">
+      <DependentUpon>crsPiecesProductPlanTotal_Machining.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlan_Machining.cs">
+      <DependentUpon>crsPiecesProductPlan_Machining.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlanTotalInstanceMachinig.cs">
+      <DependentUpon>crsPiecesProductPlanTotalInstanceMachinig.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlanInstanceMachinig.cs">
+      <DependentUpon>crsPiecesProductPlanInstanceMachinig.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsExitPermitRequest.cs">
+      <DependentUpon>crsExitPermitRequest.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPerFoodStatus.cs">
+      <DependentUpon>crsPerFoodStatus.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlanInstance1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPiecesProductPlanInstance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPiecesProductPlanTotalInstance1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPiecesProductPlanTotalInstance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspectionMachiningCheckList.cs">
+      <DependentUpon>crsPruductInspectionMachiningCheckList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSendProductToTurning.cs">
+      <DependentUpon>crsSendProductToTurning.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSlFireExtinguisherEXP.cs">
+      <DependentUpon>crsSlFireExtinguisherEXP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsToolsPerson.cs">
+      <DependentUpon>crsToolsPerson.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsToolsDelivery.cs">
+      <DependentUpon>crsToolsDelivery.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentScarbTestFN3.cs">
+      <DependentUpon>crsProcurmentScarbTestFN3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsOverTime_WorkTime.cs">
+      <DependentUpon>crsOverTime_WorkTime.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsDestructionReport.cs">
+      <DependentUpon>crsDestructionReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsOverTime_R.cs">
+      <DependentUpon>crsOverTime_R.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProductRepairRequest.cs">
+      <DependentUpon>crsProductRepairRequest.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsMessageElan.cs">
+      <DependentUpon>crsMessageElan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsAidPerson.cs">
+      <DependentUpon>crsAidPerson.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSalePlanTurning.cs">
+      <DependentUpon>crsSalePlanTurning.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialSampleReceipt.cs">
+      <DependentUpon>crsProcurmentMaterialSampleReceipt.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialTest_FN.cs">
+      <DependentUpon>crsProcurmentMaterialTest_FN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsMucsleSendReport.cs">
+      <DependentUpon>crsMucsleSendReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPruductInspectionByMonthTotal.cs">
+      <DependentUpon>crsPruductInspectionByMonthTotal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsDayHourPlannig.cs">
+      <DependentUpon>crsDayHourPlannig.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlan.cs">
+      <DependentUpon>crsPiecesProductPlan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProductPlanTotal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPiecesProductPlanTotal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProcurmentScarbTestFn.cs">
+      <DependentUpon>crsProcurmentScarbTestFn.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPiecesProuductTime.cs">
+      <DependentUpon>crsPiecesProuductTime.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsMoldingSpeed.cs">
+      <DependentUpon>crsMoldingSpeed.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProductInspectionCompare.cs">
+      <DependentUpon>crsProductInspectionCompare.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsInventoryScrab.cs">
+      <DependentUpon>crsInventoryScrab.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentScrabSuStu.cs">
+      <DependentUpon>crsProcurmentScrabSuStu.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialSuStu.cs">
+      <DependentUpon>crsProcurmentMaterialSuStu.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsAnalysisFurnaceSPC.cs">
+      <DependentUpon>crsAnalysisFurnaceSPC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsInvMaterialInput.cs">
+      <DependentUpon>crsInvMaterialInput.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsInvMaterialInputLabel.cs">
+      <DependentUpon>crsInvMaterialInputLabel.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSendProduct.cs">
+      <DependentUpon>crsSendProduct.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSalePlan.cs">
+      <DependentUpon>crsSalePlan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPerFoodStatusSummery.cs">
+      <DependentUpon>crsPerFoodStatusSummery.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialTestCo2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsProcurmentMaterialTestCo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandWeeklyTest.cs">
+      <DependentUpon>crsSandWeeklyTest.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsAnalysisFurnace.cs">
+      <DependentUpon>crsAnalysisFurnace.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsNonConformingParato.cs">
+      <DependentUpon>crsNonConformingParato.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsMoldingDownTimeByDetial.cs">
+      <DependentUpon>crsMoldingDownTimeByDetial.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentScarbTestCo.cs">
+      <DependentUpon>crsProcurmentScarbTestCo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsExitPermit.cs">
+      <DependentUpon>crsExitPermit.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsFoundryMaterialUsage.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsFoundryMaterialUsage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialTestRP.cs">
+      <DependentUpon>crsProcurmentMaterialTestRP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialTestTR.cs">
+      <DependentUpon>crsProcurmentMaterialTestTR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crpNonConforming.cs">
+      <DependentUpon>crpNonConforming.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsDownTimeByDateGDurationHSection.cs">
+      <DependentUpon>crsDownTimeByDateGDurationHSection.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsFoundryDetailsTotalMeltByZinter.cs">
+      <DependentUpon>crsFoundryDetailsTotalMeltByZinter.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsInventory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsInventory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsInventoryTotal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsInventoryTotal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsMoldingDownTimeTtTiGr_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsMoldingDownTimeTtTiGr_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsNonConforming.cs">
+      <DependentUpon>crsNonConforming.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPieces.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPieces.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPiecesProuductAndDetial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPiecesProuductAndDetial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPiecesProuductAndDetialAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPiecesProuductAndDetialAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProcurmentEnteryMaterial.cs">
+      <DependentUpon>crsProcurmentEnteryMaterial.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProcurmentMaterialTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsProcurmentMaterialTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProcurmentScarbTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsProcurmentScarbTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProcurmentScarbTestRP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsProcurmentScarbTestRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsProductInspection.cs">
+      <DependentUpon>crsProductInspection.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProductInspectionChart.cs">
+      <DependentUpon>crsProductInspectionChart.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsProductInspectionGroupByDate.cs">
+      <DependentUpon>crsProductInspectionGroupByDate.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsPruductInspectionByMonth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspectionByMonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspectionDefectDetials.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspectionDefectDetials.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspectionDefectDetialsGroup.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspectionDefectDetialsGroup.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspection_DefectNbPc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspection_DefectNbPc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspection_PcDefectNb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspection_PcDefectNb.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsPruductInspection_PcNbDefect.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsPruductInspection_PcNbDefect.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandDailyReport.cs">
+      <DependentUpon>crsSandDailyReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSandDailyReportAndRptEqu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsSandDailyReportAndRptEqu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandDailyTestMoANDCs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsSandDailyTestMoANDCs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandDailyTestSpc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsSandDailyTestSpc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandMaterialAndDaily.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsSandMaterialAndDaily.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crsSandMaterialUsage.cs">
+      <DependentUpon>crsSandMaterialUsage.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSandMaterialUsageRangDate.cs">
+      <DependentUpon>crsSandMaterialUsageRangDate.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crsSlSandWeeklyTestSpc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsSlSandWeeklyTestSpc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SendReport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chart_ProcessControl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Chart_ProcessControl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanTotal_Machining.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanTotal_Machining.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlan_Machining.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlan_Machining.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanTotalInstanceMachinig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanTotalInstanceMachinig.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanInstanceMachinig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanInstanceMachinig.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsExitPermitRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsExitPermitRequest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPerFoodStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPerFoodStatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanInstance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanInstance1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanTotalInstance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanTotalInstance1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspectionMachiningCheckList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspectionMachiningCheckList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSendProductToTurning.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSendProductToTurning.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSlFireExtinguisherEXP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSlFireExtinguisherEXP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsToolsPerson.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsToolsPerson.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsToolsDelivery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsToolsDelivery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScarbTestFN3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScarbTestFN3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsOverTime_WorkTime.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsOverTime_WorkTime.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsDestructionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsDestructionReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsOverTime_R.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsOverTime_R.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProductRepairRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProductRepairRequest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsMessageElan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsMessageElan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsAidPerson.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsAidPerson.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSalePlanTurning.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSalePlanTurning.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialSampleReceipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialSampleReceipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialTest_FN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialTest_FN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsMucsleSendReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsMucsleSendReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspectionByMonthTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspectionByMonthTotal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsDayHourPlannig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsDayHourPlannig.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProductPlanTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProductPlanTotal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScarbTestFn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScarbTestFn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProuductTime.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProuductTime.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsMoldingSpeed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsMoldingSpeed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProductInspectionCompare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProductInspectionCompare.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsInventoryScrab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsInventoryScrab.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScrabSuStu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScrabSuStu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialSuStu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialSuStu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsAnalysisFurnaceSPC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsAnalysisFurnaceSPC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsInvMaterialInput.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsInvMaterialInput.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsInvMaterialInputLabel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsInvMaterialInputLabel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSendProduct.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSendProduct.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSalePlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSalePlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPerFoodStatusSummery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPerFoodStatusSummery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialTestCo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialTestCo2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandWeeklyTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandWeeklyTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsAnalysisFurnace.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsAnalysisFurnace.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsNonConformingParato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsNonConformingParato.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsMoldingDownTimeByDetial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsMoldingDownTimeByDetial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScarbTestCo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScarbTestCo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsExitPermit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsExitPermit.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsFoundryMaterialUsage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsFoundryMaterialUsage.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialTestRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialTestRP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialTestTR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialTestTR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpNonConforming.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpNonConforming.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsDownTimeByDateGDurationHSection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsDownTimeByDateGDurationHSection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsFoundryDetailsTotalMeltByZinter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsFoundryDetailsTotalMeltByZinter.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsInventory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsInventory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsInventoryTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsInventoryTotal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsMoldingDownTimeTtTiGr_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsMoldingDownTimeTtTiGr_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsNonConforming.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsNonConforming.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPieces.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPieces.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProuductAndDetial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProuductAndDetial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPiecesProuductAndDetialAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPiecesProuductAndDetialAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentEnteryMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentEnteryMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentMaterialTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentMaterialTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScarbTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScarbTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProcurmentScarbTestRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProcurmentScarbTestRP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProductInspection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProductInspection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProductInspectionChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProductInspectionChart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsProductInspectionGroupByDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsProductInspectionGroupByDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspectionByMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspectionByMonth.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspectionDefectDetials.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspectionDefectDetials.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspectionDefectDetialsGroup.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspectionDefectDetialsGroup.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspection_DefectNbPc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspection_DefectNbPc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspection_PcDefectNb.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspection_PcDefectNb.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsPruductInspection_PcNbDefect.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsPruductInspection_PcNbDefect.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandDailyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandDailyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandDailyReportAndRptEqu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandDailyReportAndRptEqu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandDailyTestMoANDCs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandDailyTestMoANDCs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandDailyTestSpc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandDailyTestSpc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandMaterialAndDaily.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandMaterialAndDaily.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandMaterialUsage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandMaterialUsage.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSandMaterialUsageRangDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSandMaterialUsageRangDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crsSlSandWeeklyTestSpc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsSlSandWeeklyTestSpc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

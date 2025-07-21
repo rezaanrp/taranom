@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_DetailDevice" targetNamespace="http://tempuri.org/DataSet_DetailDevice.xsd" xmlns:mstns="http://tempuri.org/DataSet_DetailDevice.xsd" xmlns="http://tempuri.org/DataSet_DetailDevice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="payazobnetConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="payazobnetConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PAYADATA.Properties.Settings.GlobalReference.Default.payazobnetConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mdetailsdeviceTableAdapter" GeneratorDataComponentClassName="mdetailsdeviceTableAdapter" Name="mdetailsdevice" UserDataComponentName="mdetailsdeviceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectName="payazobnet.dbo.mdetailsdevice" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        xnamedevice, xcoddevice
+FROM            mdetailsdevice
+ORDER BY xnamedevice</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="xnamedevice" DataSetColumn="xnamedevice" />
+              <Mapping SourceColumn="xcoddevice" DataSetColumn="xcoddevice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_DetailDevice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_DetailDevice" msprop:Generator_UserDSName="DataSet_DetailDevice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mdetailsdevice" msprop:Generator_TableClassName="mdetailsdeviceDataTable" msprop:Generator_TableVarName="tablemdetailsdevice" msprop:Generator_TablePropName="mdetailsdevice" msprop:Generator_RowDeletingName="mdetailsdeviceRowDeleting" msprop:Generator_RowChangingName="mdetailsdeviceRowChanging" msprop:Generator_RowEvHandlerName="mdetailsdeviceRowChangeEventHandler" msprop:Generator_RowDeletedName="mdetailsdeviceRowDeleted" msprop:Generator_UserTableName="mdetailsdevice" msprop:Generator_RowChangedName="mdetailsdeviceRowChanged" msprop:Generator_RowEvArgName="mdetailsdeviceRowChangeEvent" msprop:Generator_RowClassName="mdetailsdeviceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="xnamedevice" msprop:Generator_ColumnVarNameInTable="columnxnamedevice" msprop:Generator_ColumnPropNameInRow="xnamedevice" msprop:Generator_ColumnPropNameInTable="xnamedeviceColumn" msprop:Generator_UserColumnName="xnamedevice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xcoddevice" msprop:Generator_ColumnVarNameInTable="columnxcoddevice" msprop:Generator_ColumnPropNameInRow="xcoddevice" msprop:Generator_ColumnPropNameInTable="xcoddeviceColumn" msprop:Generator_UserColumnName="xcoddevice">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mdetailsdevice" />
+      <xs:field xpath="mstns:xcoddevice" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

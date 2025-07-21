@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="DatalinqpercentrealizationprogramDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=sa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mserviceprogram" Member="mserviceprograms">
+    <Type Name="mserviceprogram">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidservice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdevicecod" Type="System.String" DbType="NChar(6)" CanBeNull="true" />
+      <Column Name="xdate" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="xtimestart" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="xtimeend" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="xMonthly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="xresult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xexplain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="mserviceprogramheader_mserviceprogram" Member="mserviceprogramheader" ThisKey="xidservice" OtherKey="xid" Type="mserviceprogramheader" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mserviceprogramheader" Member="mserviceprogramheaders">
+    <Type Name="mserviceprogramheader">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xyear" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="xmonth" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="xismonthly" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xCertified_net_Manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xiduser_Confirms_net" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xCertified_Product_Manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xiduser_confirms_product" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xCertified_Planning_Manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xiduser_confirms_planing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xCertified_Manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xiduser_confirms_manager" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="mserviceprogramheader_mserviceprogram" Member="mserviceprograms" ThisKey="xid" OtherKey="xidservice" Type="mserviceprogram" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mpercent_realization_program" Member="mpercent_realization_programs">
+    <Type Name="mpercent_realization_program">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xdate" Type="System.String" DbType="NChar(7)" CanBeNull="true" />
+      <Column Name="xnumberofprogramservice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xnumberofprogramservicedone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xpercent" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

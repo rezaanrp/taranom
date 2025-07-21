@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\Payazob\Payazob.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="D:\Payazob\Payazob\app.config" />
+  <event action="Analyze" type="Success" name="Form7.resx" path="D:\Payazob\Payazob\Form7.resx" />
+  <event action="Analyze" type="Success" name="frmAnalysisFurnace.resx" path="D:\Payazob\Payazob\FRM\AnalysisFurnace\frmAnalysisFurnace.resx" />
+  <event action="Analyze" type="Success" name="frmAnalysisFurnace_Report.resx" path="D:\Payazob\Payazob\FRM\AnalysisFurnace\frmAnalysisFurnace_Report.resx" />
+  <event action="Analyze" type="Success" name="frmAnalysisFurnaceImport.cs.resx" path="D:\Payazob\Payazob\FRM\AnalysisFurnace\frmAnalysisFurnaceImport.cs.resx" />
+  <event action="Analyze" type="Success" name="frmAnalyzeFurnaceRange.resx" path="D:\Payazob\Payazob\FRM\AnalysisFurnace\frmAnalyzeFurnaceRange.resx" />
+  <event action="Analyze" type="Success" name="frmExitPermit.resx" path="D:\Payazob\Payazob\FRM\ExitPermit\frmExitPermit.resx" />
+  <event action="Analyze" type="Success" name="frmExitPermit_Report.resx" path="D:\Payazob\Payazob\FRM\ExitPermit\frmExitPermit_Report.resx" />
+  <event action="Analyze" type="Success" name="frmFoundryZinter.resx" path="D:\Payazob\Payazob\FRM\Foundry\frmFoundryZinter.resx" />
+  <event action="Analyze" type="Success" name="frmMeltingNonConforming_Report.resx" path="D:\Payazob\Payazob\FRM\Foundry\frmMeltingNonConforming_Report.resx" />
+  <event action="Analyze" type="Success" name="frmDate.resx" path="D:\Payazob\Payazob\FRM\frmDate\frmDate.resx" />
+  <event action="Analyze" type="Success" name="frmMoldingDownTimeTtTiGr_Report.resx" path="D:\Payazob\Payazob\FRM\MoldingDownTime\frmMoldingDownTimeTtTiGr_Report.resx" />
+  <event action="Analyze" type="Success" name="frmNonConforming_Report.resx" path="D:\Payazob\Payazob\FRM\NonConforming\frmNonConforming_Report.resx" />
+  <event action="Analyze" type="Success" name="frmNonConformingType.resx" path="D:\Payazob\Payazob\FRM\NonConforming\frmNonConformingType.resx" />
+  <event action="Analyze" type="Success" name="frmPieces_Report.resx" path="D:\Payazob\Payazob\FRM\Pieces\frmPieces_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurementGoodsOut.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurementGoodsOut.resx" />
+  <event action="Analyze" type="Success" name="frmProcurementGoodsOut_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurementGoodsOut_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentGuest.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentGuest.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentGuest_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentGuest_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentMaterialTest.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentMaterialTest.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentMaterialTest_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentMaterialTest_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentSalesProduct.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentSalesProduct.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentSalesProduct_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentSalesProduct_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentSalesProductTtPcByCu_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentSalesProductTtPcByCu_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentScarbTest.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentScarbTest.resx" />
+  <event action="Analyze" type="Success" name="frmProcurmentScarbTest_Report.resx" path="D:\Payazob\Payazob\FRM\Procurment\frmProcurmentScarbTest_Report.resx" />
+  <event action="Analyze" type="Success" name="frmSalePlan.resx" path="D:\Payazob\Payazob\FRM\SalePlan\frmSalePlan.resx" />
+  <event action="Analyze" type="Success" name="frmSandDailyReportRange.resx" path="D:\Payazob\Payazob\FRM\Sand\frmSandDailyReportRange.resx" />
+  <event action="Analyze" type="Success" name="frmSandDailyTestMoANDCs_Report.resx" path="D:\Payazob\Payazob\FRM\Sand\frmSandDailyTestMoANDCs_Report.resx" />
+  <event action="Analyze" type="Success" name="frmSandWeeklyTestRange.resx" path="D:\Payazob\Payazob\FRM\Sand\frmSandWeeklyTestRange.resx" />
+  <event action="Analyze" type="Success" name="frmAccessRights.resx" path="D:\Payazob\Payazob\frmAccessRights.resx" />
+  <event action="Analyze" type="Success" name="frmCompanyList.resx" path="D:\Payazob\Payazob\frmCompanyList.resx" />
+  <event action="Analyze" type="Success" name="frmCorrespondence.resx" path="D:\Payazob\Payazob\frmCorrespondence.resx" />
+  <event action="Analyze" type="Success" name="frmCorrespondenceList.resx" path="D:\Payazob\Payazob\frmCorrespondenceList.resx" />
+  <event action="Analyze" type="Success" name="frmDayHourPlanning.resx" path="D:\Payazob\Payazob\frmDayHourPlanning.resx" />
+  <event action="Analyze" type="Success" name="frmDestructionReport.resx" path="D:\Payazob\Payazob\frmDestructionReport.resx" />
+  <event action="Analyze" type="Success" name="frmEmpty_Report.resx" path="D:\Payazob\Payazob\frmEmpty_Report.resx" />
+  <event action="Analyze" type="Success" name="frmFoundry.resx" path="D:\Payazob\Payazob\frmFoundry.resx" />
+  <event action="Analyze" type="Success" name="frmFoundryDetialsList.resx" path="D:\Payazob\Payazob\frmFoundryDetialsList.resx" />
+  <event action="Analyze" type="Success" name="frmFoundryMaterialUsage_Report.resx" path="D:\Payazob\Payazob\frmFoundryMaterialUsage_Report.resx" />
+  <event action="Analyze" type="Success" name="frmInventory.resx" path="D:\Payazob\Payazob\frmInventory.resx" />
+  <event action="Analyze" type="Success" name="frmLogin.resx" path="D:\Payazob\Payazob\frmLogin.resx" />
+  <event action="Analyze" type="Success" name="frmMeltTestResult.resx" path="D:\Payazob\Payazob\frmMeltTestResult.resx" />
+  <event action="Analyze" type="Success" name="frmMeltTestResult_Report.resx" path="D:\Payazob\Payazob\frmMeltTestResult_Report.resx" />
+  <event action="Analyze" type="Success" name="frmMeltTestResult_Report1.resx" path="D:\Payazob\Payazob\frmMeltTestResult_Report1.resx" />
+  <event action="Analyze" type="Success" name="frmMeltTestResultScrab.resx" path="D:\Payazob\Payazob\frmMeltTestResultScrab.resx" />
+  <event action="Analyze" type="Success" name="frmMeltTestResultScrab_Report1.resx" path="D:\Payazob\Payazob\frmMeltTestResultScrab_Report1.resx" />
+  <event action="Analyze" type="Success" name="frmMoldingDownTime.resx" path="D:\Payazob\Payazob\frmMoldingDownTime.resx" />
+  <event action="Analyze" type="Success" name="frmMoldingDownTimeType.resx" path="D:\Payazob\Payazob\frmMoldingDownTimeType.resx" />
+  <event action="Analyze" type="Success" name="frmMsChart.resx" path="D:\Payazob\Payazob\frmMsChart.resx" />
+  <event action="Analyze" type="Success" name="frmNonConforming.resx" path="D:\Payazob\Payazob\frmNonConforming.resx" />
+  <event action="Analyze" type="Success" name="frmNonConforming_Report.resx" path="D:\Payazob\Payazob\frmNonConforming_Report.resx" />
+  <event action="Analyze" type="Success" name="frmNonConformingList.resx" path="D:\Payazob\Payazob\frmNonConformingList.resx" />
+  <event action="Analyze" type="Success" name="frmPhone.resx" path="D:\Payazob\Payazob\frmPhone.resx" />
+  <event action="Analyze" type="Success" name="frmPhoneNew.resx" path="D:\Payazob\Payazob\frmPhoneNew.resx" />
+  <event action="Analyze" type="Success" name="frmPieces.resx" path="D:\Payazob\Payazob\frmPieces.resx" />
+  <event action="Analyze" type="Success" name="frmPiecesProducs.resx" path="D:\Payazob\Payazob\frmPiecesProducs.resx" />
+  <event action="Analyze" type="Success" name="frmPlanning.resx" path="D:\Payazob\Payazob\frmPlanning.resx" />
+  <event action="Analyze" type="Success" name="frmProductInspection.resx" path="D:\Payazob\Payazob\frmProductInspection.resx" />
+  <event action="Analyze" type="Success" name="frmProductInspection_Chart.resx" path="D:\Payazob\Payazob\frmProductInspection_Chart.resx" />
+  <event action="Analyze" type="Success" name="frmProductInspectionDefect_Report.resx" path="D:\Payazob\Payazob\frmProductInspectionDefect_Report.resx" />
+  <event action="Analyze" type="Success" name="frmProductInspectionList.resx" path="D:\Payazob\Payazob\frmProductInspectionList.resx" />
+  <event action="Analyze" type="Success" name="frmProductInspectionView.resx" path="D:\Payazob\Payazob\frmProductInspectionView.resx" />
+  <event action="Analyze" type="Success" name="frmProductionPlanning.resx" path="D:\Payazob\Payazob\frmProductionPlanning.resx" />
+  <event action="Analyze" type="Success" name="frmQualityControlMeltReport.resx" path="D:\Payazob\Payazob\frmQualityControlMeltReport.resx" />
+  <event action="Analyze" type="Success" name="frmReport.resx" path="D:\Payazob\Payazob\frmReport.resx" />
+  <event action="Analyze" type="Success" name="frmReturnCustomer.resx" path="D:\Payazob\Payazob\frmReturnCustomer.resx" />
+  <event action="Analyze" type="Success" name="frmSandDailyReport.resx" path="D:\Payazob\Payazob\frmSandDailyReport.resx" />
+  <event action="Analyze" type="Success" name="frmSandDailyReportList.resx" path="D:\Payazob\Payazob\frmSandDailyReportList.resx" />
+  <event action="Analyze" type="Success" name="frmSandDailyTestSpc_Report.resx" path="D:\Payazob\Payazob\frmSandDailyTestSpc_Report.resx" />
+  <event action="Analyze" type="Success" name="frmSandMaterialAndDaily_Report.resx" path="D:\Payazob\Payazob\frmSandMaterialAndDaily_Report.resx" />
+  <event action="Analyze" type="Success" name="frmSandWeeklyTest.resx" path="D:\Payazob\Payazob\frmSandWeeklyTest.resx" />
+  <event action="Analyze" type="Success" name="frmSandWeeklyTestChart.resx" path="D:\Payazob\Payazob\frmSandWeeklyTestChart.resx" />
+  <event action="Analyze" type="Success" name="frmSandWeeklyTestList.resx" path="D:\Payazob\Payazob\frmSandWeeklyTestList.resx" />
+  <event action="Analyze" type="Success" name="frmSchedule.resx" path="D:\Payazob\Payazob\frmSchedule.resx" />
+  <event action="Analyze" type="Success" name="frmSendProduct.resx" path="D:\Payazob\Payazob\frmSendProduct.resx" />
+  <event action="Analyze" type="Success" name="frmSendReport.resx" path="D:\Payazob\Payazob\frmSendReport.resx" />
+  <event action="Analyze" type="Success" name="frmUpdateFromSgdb.resx" path="D:\Payazob\Payazob\frmUpdateFromSgdb.resx" />
+  <event action="Analyze" type="Success" name="Main.resx" path="D:\Payazob\Payazob\Main.resx" />
+  <event action="Analyze" type="Success" name="CustomToolTip.resx" path="D:\Payazob\Payazob\MyControl\CustomToolTip.resx" />
+  <event action="Analyze" type="Success" name="ucSubmenu.resx" path="D:\Payazob\Payazob\MyControl\ucSubmenu.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="D:\Payazob\Payazob\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Payazob" path="D:\Payazob\Payazob\Payazob.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\DAL\DAL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="D:\Payazob\DAL\app.config" />
+  <event action="Analyze" type="Success" name="DAL" path="D:\Payazob\DAL\DAL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\BLL\BLL.csproj" />
+  <event action="Analyze" type="Success" name="BLL" path="D:\Payazob\BLL\BLL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\ControlLibrary\ControlLibrary.csproj" />
+  <event action="Analyze" type="Success" name="CustomToolTip.resx" path="D:\Payazob\ControlLibrary\CustomToolTip.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="D:\Payazob\ControlLibrary\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="uc_ChangePassword.resx" path="D:\Payazob\ControlLibrary\uc_ChangePassword.resx" />
+  <event action="Analyze" type="Success" name="uc_Chart.resx" path="D:\Payazob\ControlLibrary\uc_Chart.resx" />
+  <event action="Analyze" type="Success" name="uc_CmbAutoByFilter.resx" path="D:\Payazob\ControlLibrary\uc_CmbAutoByFilter.resx" />
+  <event action="Analyze" type="Success" name="uc_combobox.resx" path="D:\Payazob\ControlLibrary\uc_combobox.resx" />
+  <event action="Analyze" type="Success" name="uc_DataGridViewBtn.resx" path="D:\Payazob\ControlLibrary\uc_DataGridViewBtn.resx" />
+  <event action="Analyze" type="Success" name="uc_DataGridViewCellCalc.resx" path="D:\Payazob\ControlLibrary\uc_DataGridViewCellCalc.resx" />
+  <event action="Analyze" type="Success" name="uc_Details.resx" path="D:\Payazob\ControlLibrary\uc_Details.resx" />
+  <event action="Analyze" type="Success" name="uc_Filter_Date.resx" path="D:\Payazob\ControlLibrary\uc_Filter_Date.resx" />
+  <event action="Analyze" type="Success" name="uc_filter_Picese.resx" path="D:\Payazob\ControlLibrary\uc_filter_Picese.resx" />
+  <event action="Analyze" type="Success" name="uc_GridView.resx" path="D:\Payazob\ControlLibrary\uc_GridView.resx" />
+  <event action="Analyze" type="Success" name="uc_ListFiled.resx" path="D:\Payazob\ControlLibrary\uc_ListFiled.resx" />
+  <event action="Analyze" type="Success" name="uc_LoadFile.resx" path="D:\Payazob\ControlLibrary\uc_LoadFile.resx" />
+  <event action="Analyze" type="Success" name="uc_Month.resx" path="D:\Payazob\ControlLibrary\uc_Month.resx" />
+  <event action="Analyze" type="Success" name="uc_MsChart.resx" path="D:\Payazob\ControlLibrary\uc_MsChart.resx" />
+  <event action="Analyze" type="Success" name="uc_mtxtDate.resx" path="D:\Payazob\ControlLibrary\uc_mtxtDate.resx" />
+  <event action="Analyze" type="Success" name="uc_mtxtNumber.resx" path="D:\Payazob\ControlLibrary\uc_mtxtNumber.resx" />
+  <event action="Analyze" type="Success" name="uc_PanelBox.resx" path="D:\Payazob\ControlLibrary\uc_PanelBox.resx" />
+  <event action="Analyze" type="Success" name="uc_Poem.resx" path="D:\Payazob\ControlLibrary\uc_Poem.resx" />
+  <event action="Analyze" type="Success" name="uc_RegisteringGroup.resx" path="D:\Payazob\ControlLibrary\uc_RegisteringGroup.resx" />
+  <event action="Analyze" type="Success" name="uc_SaveFileFromSql.resx" path="D:\Payazob\ControlLibrary\uc_SaveFileFromSql.resx" />
+  <event action="Analyze" type="Success" name="uc_SearchData.resx" path="D:\Payazob\ControlLibrary\uc_SearchData.resx" />
+  <event action="Analyze" type="Success" name="uc_TextBox.resx" path="D:\Payazob\ControlLibrary\uc_TextBox.resx" />
+  <event action="Analyze" type="Success" name="uc_TreeView.resx" path="D:\Payazob\ControlLibrary\uc_TreeView.resx" />
+  <event action="Analyze" type="Success" name="uc_txtBox.resx" path="D:\Payazob\ControlLibrary\uc_txtBox.resx" />
+  <event action="Analyze" type="Success" name="ucStatusBar.resx" path="D:\Payazob\ControlLibrary\ucStatusBar.resx" />
+  <event action="Analyze" type="Success" name="UserControl1.resx" path="D:\Payazob\ControlLibrary\UserControl1.resx" />
+  <event action="Analyze" type="Success" name="ControlLibrary" path="D:\Payazob\ControlLibrary\ControlLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\Validation\Validation.csproj" />
+  <event action="Analyze" type="Success" name="Validation" path="D:\Payazob\Validation\Validation.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\Report\Report.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="D:\Payazob\Report\app.config" />
+  <event action="Analyze" type="Success" name="Form1.resx" path="D:\Payazob\Report\Form1.resx" />
+  <event action="Analyze" type="Success" name="Report" path="D:\Payazob\Report\Report.csproj" />
+  <event action="Analyze" type="Success" name="Payazob" path="D:\Payazob\Payazob.sln" />
+</log>

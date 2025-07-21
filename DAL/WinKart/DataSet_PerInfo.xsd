@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_PerInfo" targetNamespace="http://tempuri.org/DataSet_PerInfo.xsd" xmlns:mstns="http://tempuri.org/DataSet_PerInfo.xsd" xmlns="http://tempuri.org/DataSet_PerInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EOS_93ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="EOS_93ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.EOS_93ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EOSConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="EOSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.EOSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EOSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EOSConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.EOSConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EOS_93ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EOS_93ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.EOS_93ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PersonTableAdapter" GeneratorDataComponentClassName="PersonTableAdapter" Name="Person" UserDataComponentName="PersonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EOSConnectionString1 (Settings)" DbObjectName="EOS.dbo.Person" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PERNO, REPLACE(FIRSTNAME, '  ', '') + ' ' + REPLACE(LASTNAME, '  ', '') AS Name
+FROM            Person
+ORDER BY LASTNAME</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="PERNO" DataSetColumn="PERNO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IOInfoTableAdapter" GeneratorDataComponentClassName="IOInfoTableAdapter" Name="IOInfo" UserDataComponentName="IOInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EOS_93ConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ISNULL(PERNO, 0) AS PERNO
+FROM            IOInfo
+WHERE        (BEGINDATE = @BEGINDATE) AND (DURATION = 0)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BEGINDATE" ColumnName="BEGINDATE" DataSourceName="EOS_93.dbo.IOInfo" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@BEGINDATE" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="BEGINDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PERNO" DataSetColumn="PERNO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_PerInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_PerInfo" msprop:Generator_UserDSName="DataSet_PerInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Person" msprop:Generator_TableClassName="PersonDataTable" msprop:Generator_TableVarName="tablePerson" msprop:Generator_RowChangedName="PersonRowChanged" msprop:Generator_TablePropName="Person" msprop:Generator_RowDeletingName="PersonRowDeleting" msprop:Generator_RowChangingName="PersonRowChanging" msprop:Generator_RowEvHandlerName="PersonRowChangeEventHandler" msprop:Generator_RowDeletedName="PersonRowDeleted" msprop:Generator_RowClassName="PersonRow" msprop:Generator_UserTableName="Person" msprop:Generator_RowEvArgName="PersonRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PERNO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPERNO" msprop:Generator_ColumnPropNameInRow="PERNO" msprop:Generator_ColumnPropNameInTable="PERNOColumn" msprop:Generator_UserColumnName="PERNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IOInfo" msprop:Generator_TableClassName="IOInfoDataTable" msprop:Generator_TableVarName="tableIOInfo" msprop:Generator_RowChangedName="IOInfoRowChanged" msprop:Generator_TablePropName="IOInfo" msprop:Generator_RowDeletingName="IOInfoRowDeleting" msprop:Generator_RowChangingName="IOInfoRowChanging" msprop:Generator_RowEvHandlerName="IOInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IOInfoRowDeleted" msprop:Generator_RowClassName="IOInfoRow" msprop:Generator_UserTableName="IOInfo" msprop:Generator_RowEvArgName="IOInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PERNO" msprop:Generator_ColumnVarNameInTable="columnPERNO" msprop:Generator_ColumnPropNameInRow="PERNO" msprop:Generator_ColumnPropNameInTable="PERNOColumn" msprop:Generator_UserColumnName="PERNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Person" />
+      <xs:field xpath="mstns:PERNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

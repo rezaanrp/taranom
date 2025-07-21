@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="lqinterupt_planDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=saa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mserviceman_hour" Member="mserviceman_hours">
+    <Type Name="mserviceman_hour">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xid_interupt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xname_repairer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xhours" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="xtype" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mservic_device" Member="mservic_devices">
+    <Type Name="mservic_device">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xitemno" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xdevicecod" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xmount" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="mservic_device_mservicefor_interupt_plan" Member="mservicefor_interupt_plans" ThisKey="xid" OtherKey="xidservice" Type="mservicefor_interupt_plan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mservicefor_interupt_plan" Member="mservicefor_interupt_plans">
+    <Type Name="mservicefor_interupt_plan">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidservice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidinterupt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="do_" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="explain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="mservic_device_mservicefor_interupt_plan" Member="mservic_device" ThisKey="xidservice" OtherKey="xid" Type="mservic_device" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="minterupt_plan_mservicefor_interupt_plan" Member="minterupt_plan" ThisKey="xidinterupt" OtherKey="xid" Type="minterupt_plan" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mselectdemuer" Member="mselectdemuers">
+    <Type Name="mselectdemuer">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xiddemuer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idparent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="typeparent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.minterupt_plan" Member="minterupt_plans">
+    <Type Name="minterupt_plan">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidserviceprogram" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdate_plan" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xdatestart_interupt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xtime_startinterupt" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="xdate_endinterupt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xtime_endinterupt" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="xdevice_cod" Type="System.String" DbType="NChar(6)" CanBeNull="true" />
+      <Column Name="xname_operator_deliveryof" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xname_operator_transferee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xexplain_havoc" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xexplain_activity" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xtime_interupt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdelay" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xmountly" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="minterupt_plan_mservicefor_interupt_plan" Member="mservicefor_interupt_plans" ThisKey="xid" OtherKey="xidinterupt" Type="mservicefor_interupt_plan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mobject_disposal" Member="mobject_disposals">
+    <Type Name="mobject_disposal">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xid_interupt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="x_cod_objects_disposal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xcount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xtype" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Delete_from_interupt_plan" Method="Delete_from_interupt_plan">
+    <Parameter Name="xid" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Updateserviceforinterupt" Method="Updateserviceforinterupt">
+    <Parameter Name="do_" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="explain" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="UpdateserviceforinteruptResult">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xidservice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidinterupt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="do_" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="explain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Deletealldemuerfointerupt" Method="Deletealldemuerfointerupt">
+    <Parameter Name="Original_idparent" Parameter="original_idparent" Type="System.Int32" DbType="Int" />
+    <Parameter Name="type" Type="System.String" DbType="NChar(5)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Selectservice_for_interupt_plan" Method="Selectservice_for_interupt_plan">
+    <Parameter Name="idinterupt" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Selectservice_for_interupt_planResult">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xidinterupt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xitemno" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="do_" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="explain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Insertinto_interuptplan" Method="Insertinto_interuptplan">
+    <Parameter Name="xdate_plan" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xidserviceprogram" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xdatestart_interupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_startinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdate_endinterupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_endinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdevice_cod" Type="System.String" DbType="NChar(6)" />
+    <Parameter Name="xname_operator_deliveryof" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xname_operator_transferee" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_havoc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_activity" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xtime_interupt" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xdelay" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="xmountly" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="Insertinto_interuptplanResult">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Update_interuptplan" Method="Update_interuptplan">
+    <Parameter Name="xdate_plan" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xdatestart_interupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_startinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdate_endinterupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_endinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdevice_cod" Type="System.String" DbType="NChar(6)" />
+    <Parameter Name="xname_operator_deliveryof" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xname_operator_transferee" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_havoc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_activity" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xtime_interupt" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xdelay" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="xid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xmountly" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Update_interupt_plan" Method="Update_interupt_plan">
+    <Parameter Name="xdate_plan" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xdatestart_interupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_startinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdate_endinterupt" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="xtime_endinterupt" Type="System.String" DbType="NChar(5)" />
+    <Parameter Name="xdevice_cod" Type="System.String" DbType="NChar(6)" />
+    <Parameter Name="xname_operator_deliveryof" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xname_operator_transferee" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_havoc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xexplain_activity" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="xtime_interupt" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xdelay" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="xid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xmountly" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

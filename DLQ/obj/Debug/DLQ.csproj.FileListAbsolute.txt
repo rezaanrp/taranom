@@ -1,0 +1,56 @@
+D:\Payazob\DLQ\bin\Debug\DLQ.dll.config
+D:\Payazob\DLQ\bin\Debug\DLQ.dll
+D:\Payazob\DLQ\bin\Debug\DLQ.pdb
+D:\Payazob\DLQ\obj\Debug\DLQ.dll
+D:\Payazob\DLQ\obj\Debug\DLQ.pdb
+E:\3\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+E:\3\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+E:\3\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+E:\3\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+E:\3\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+E:\3\Pa0yazob000\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+E:\3\Pa0yazob000\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+E:\3\Pa0yazob000\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+E:\3\Pa0yazob000\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+E:\3\Pa0yazob000\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+D:\MIS\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+D:\MIS\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+D:\MIS\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+D:\MIS\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+D:\MIS\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+D:\MIS\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+D:\MIS\Pa0yazob000\DLQ\obj\Debug\DLQ.csprojAssemblyReference.cache
+D:\Pa0yazob\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+D:\Pa0yazob\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+D:\Pa0yazob\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+D:\Pa0yazob\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+D:\Pa0yazob\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+D:\Pa0yazob\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+D:\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+D:\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+D:\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+D:\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csprojAssemblyReference.cache
+D:\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+D:\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+D:\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+D:\MIS\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+D:\MIS\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+D:\MIS\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+D:\MIS\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csprojAssemblyReference.cache
+D:\MIS\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+D:\MIS\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+D:\MIS\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csprojAssemblyReference.cache
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll.config
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\bin\Debug\DLQ.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\DLQ\obj\Debug\DLQ.csproj.AssemblyReference.cache

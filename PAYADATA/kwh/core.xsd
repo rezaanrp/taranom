@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="coreinfo" msprop:Generator_TableClassName="coreinfoDataTable" msprop:Generator_TableVarName="tablecoreinfo" msprop:Generator_TablePropName="coreinfo" msprop:Generator_RowDeletingName="coreinfoRowDeleting" msprop:Generator_UserTableName="coreinfo" msprop:Generator_RowChangingName="coreinfoRowChanging" msprop:Generator_RowEvHandlerName="coreinfoRowChangeEventHandler" msprop:Generator_RowDeletedName="coreinfoRowDeleted" msprop:Generator_RowEvArgName="coreinfoRowChangeEvent" msprop:Generator_RowChangedName="coreinfoRowChanged" msprop:Generator_RowClassName="coreinfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="melt_date" msprop:Generator_ColumnVarNameInTable="columnmelt_date" msprop:Generator_ColumnPropNameInRow="melt_date" msprop:Generator_ColumnPropNameInTable="melt_dateColumn" msprop:Generator_UserColumnName="melt_date" type="xs:string" minOccurs="0" />
+              <xs:element name="melt_time" msprop:Generator_ColumnVarNameInTable="columnmelt_time" msprop:Generator_ColumnPropNameInRow="melt_time" msprop:Generator_ColumnPropNameInTable="melt_timeColumn" msprop:Generator_UserColumnName="melt_time" type="xs:string" minOccurs="0" />
+              <xs:element name="mf_no" msprop:Generator_ColumnVarNameInTable="columnmf_no" msprop:Generator_ColumnPropNameInRow="mf_no" msprop:Generator_ColumnPropNameInTable="mf_noColumn" msprop:Generator_UserColumnName="mf_no" type="xs:string" minOccurs="0" />
+              <xs:element name="kw" msdata:ReadOnly="true" msdata:Expression="0" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="kw" msprop:Generator_ColumnVarNameInTable="columnkw" msprop:Generator_ColumnPropNameInTable="kwColumn" msprop:Generator_UserColumnName="kw" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="base" msprop:nullValue="2000" msprop:Generator_ColumnPropNameInRow="_base" msprop:Generator_ColumnVarNameInTable="columnbase" msprop:Generator_ColumnPropNameInTable="baseColumn" msprop:Generator_UserColumnName="base" type="xs:string" default="2000" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

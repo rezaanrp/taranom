@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="loginDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=sa" SettingsObjectName="PAYAIND.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mallowaccestouser" Member="mallowaccestousers">
+    <Type Name="mallowaccestouser">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xobjectid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xgroupid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xallowaccesread" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xallowaccesupdate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="allowobject_mallowaccestouser" Member="allowobject" ThisKey="xobjectid" OtherKey="xid" Type="allowobject" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="tablelogin_mallowaccestouser" Member="tablelogin" ThisKey="xuserid" OtherKey="xid" Type="tablelogin" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.allowobject" Member="allowobjects">
+    <Type Name="allowobject">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xpersianname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="allowobject_mallowaccestouser" Member="mallowaccestousers" ThisKey="xid" OtherKey="xobjectid" Type="mallowaccestouser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tablelogin" Member="tablelogins">
+    <Type Name="tablelogin">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xgroupid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userpass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tablelogin_mallowaccestouser" Member="mallowaccestousers" ThisKey="xid" OtherKey="xuserid" Type="mallowaccestouser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mservice" Member="mservices">
+    <Type Name="mservice">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="time" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xwo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Updateuserpasslogin" Method="Updateuserpasslogin">
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="userpass" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="xid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="UpdateuserpassloginResult">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[group]" Member="group" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userpass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

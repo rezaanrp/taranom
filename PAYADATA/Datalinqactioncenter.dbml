@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="DatalinqactioncenterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=sa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.a_typeofaction" Member="a_typeofactions">
+    <Type Name="a_typeofaction">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xpersianname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xenglishname" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Association Name="a_typeofaction_A_actioncenter" Member="A_actioncenters" ThisKey="xid" OtherKey="xtypeid" Type="A_actioncenter" />
+    </Type>
+  </Table>
+  <Table Name="dbo.a_not_show_action_center_foruser" Member="a_not_show_action_center_forusers">
+    <Type Name="a_not_show_action_center_foruser">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xnotshow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="A_actioncenter_a_not_show_action_center_foruser" Member="A_actioncenter" ThisKey="xidaction" OtherKey="xid" Type="A_actioncenter" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.a_show_action_user_group" Member="a_show_action_user_groups">
+    <Type Name="a_show_action_user_group">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdateshow" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xtimeshow" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.A_actioncenter" Member="A_actioncenters">
+    <Type Name="A_actioncenter">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xtypeid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xtime" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xissolved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xidusercauser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidcauser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="A_actioncenter_a_not_show_action_center_foruser" Member="a_not_show_action_center_forusers" ThisKey="xid" OtherKey="xidaction" Type="a_not_show_action_center_foruser" />
+      <Association Name="a_typeofaction_A_actioncenter" Member="a_typeofaction" ThisKey="xtypeid" OtherKey="xid" Type="a_typeofaction" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

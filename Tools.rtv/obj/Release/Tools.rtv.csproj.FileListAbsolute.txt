@@ -1,0 +1,4 @@
+D:\MIS\Pa0yazob000\Tools.rtv\bin\Release\Tools.rtv.dll
+D:\MIS\Pa0yazob000\Tools.rtv\bin\Release\Tools.rtv.pdb
+D:\MIS\Pa0yazob000\Tools.rtv\obj\Release\Tools.rtv.dll
+D:\MIS\Pa0yazob000\Tools.rtv\obj\Release\Tools.rtv.pdb

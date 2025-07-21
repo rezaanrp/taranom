@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="Data_interup_trubleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=saa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ttruble_shooting" Member="ttruble_shootings">
+    <Type Name="ttruble_shooting">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xtruble" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(7) NOT NULL" CanBeNull="false" />
+      <Association Name="ttruble_shooting_ttruble_shooting" Member="ttruble_shooting2" ThisKey="xid" OtherKey="xid" Type="ttruble_shooting" Cardinality="One" />
+      <Association Name="ttruble_shooting_ttruble_shooting" Member="ttruble_shooting1" ThisKey="xid" OtherKey="xid" Type="ttruble_shooting" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tsolutionfortruble" Member="tsolutionfortrubles">
+    <Type Name="tsolutionfortruble">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xcause" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xsolution" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xcodtruble" Type="System.String" DbType="NChar(7) NOT NULL" CanBeNull="false" />
+      <Association Name="tsolutionfortruble_tsolutionfortruble" Member="tsolutionfortruble2" ThisKey="xid" OtherKey="xid" Type="tsolutionfortruble" Cardinality="One" />
+      <Association Name="tsolutionfortruble_tsolutionfortruble" Member="tsolutionfortruble1" ThisKey="xid" OtherKey="xid" Type="tsolutionfortruble" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mselectedtrubleshooting" Member="mselectedtrubleshootings">
+    <Type Name="mselectedtrubleshooting">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidofparent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xtypeofparant" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xidtruble" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

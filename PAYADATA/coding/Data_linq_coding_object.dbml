@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="Data_linq_coding_objectDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=saa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.device" Member="devices">
+    <Type Name="device">
+      <Column Name="xcod" Type="System.String" DbType="NChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xiddevice" Type="System.String" DbType="NChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="xnumber" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="xcodoflocation" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="xmanufactur_serial_number" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xdateofmaking" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xdatestart" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xstatepurchase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xautomation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xperiod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="device_mdeviceset1" Member="mdeviceset1s" ThisKey="xcod" OtherKey="xiddevice" Type="mdeviceset1" />
+      <Association Name="mdetailsdevice_device" Member="mdetailsdevice" ThisKey="xiddevice" OtherKey="xcoddevice" Type="mdetailsdevice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mallobject" Member="mallobjects">
+    <Type Name="mallobject">
+      <Column Name="xcod" Type="System.String" DbType="NChar(28) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="oloaviyat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xid" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xcodparent" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="xrowid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mdetailsdevice" Member="mdetailsdevices">
+    <Type Name="mdetailsdevice">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xnamedevice" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xEnglishname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xcoddevice" Type="System.String" DbType="NChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xcount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xcountofoperator" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xweight" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="xuseful_life" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="map" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="typemap" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="mdetailsdevice_device" Member="devices" ThisKey="xcoddevice" OtherKey="xiddevice" Type="device" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mdevice_state" Member="mdevice_states">
+    <Type Name="mdevice_state">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xstate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mlevelautomationdevice" Member="mlevelautomationdevices">
+    <Type Name="mlevelautomationdevice">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xlevelautomation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mPeriod" Member="mPeriods">
+    <Type Name="mPeriod">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.object_set2" Member="object_set2s">
+    <Type Name="object_set2">
+      <Column Name="xid_parent" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="xid" Type="System.String" DbType="NChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="xcount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="is_key" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="objecttable_object_set2" Member="objecttable" ThisKey="xid" OtherKey="xid" Type="objecttable" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.objecttable" Member="objecttables">
+    <Type Name="objecttable">
+      <Column Name="xid" Type="System.String" DbType="NChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xisBuilding" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="objecttable_object_set2" Member="object_set2s" ThisKey="xid" OtherKey="xid" Type="object_set2" />
+      <Association Name="objecttable_objecttable" Member="objecttable2" ThisKey="xid" OtherKey="xid" Type="objecttable" Cardinality="One" />
+      <Association Name="objecttable_objecttable" Member="objecttable1" ThisKey="xid" OtherKey="xid" Type="objecttable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Viewallobject" Member="Viewallobjects">
+    <Type Name="Viewallobject">
+      <Column Name="xrowid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(28) NOT NULL" CanBeNull="false" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xnamedevice" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xnumber" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="xnameset1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xnameset2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xnameset3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="oloaviyat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xisBuilding" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mdeviceset1" Member="mdeviceset1s">
+    <Type Name="mdeviceset1">
+      <Column Name="xcod" Type="System.String" DbType="NChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xiddevice" Type="System.String" DbType="NChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="xid" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="xnameset1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xIsmecanical" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xIsglobal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="mdeviceset1_mdeviceset2" Member="mdeviceset2s" ThisKey="xcod" OtherKey="xparentid" Type="mdeviceset2" />
+      <Association Name="device_mdeviceset1" Member="device" ThisKey="xiddevice" OtherKey="xcod" Type="device" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mdeviceset2" Member="mdeviceset2s">
+    <Type Name="mdeviceset2">
+      <Column Name="xparentid" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xnameset2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xid" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xcodfinalset2" Type="System.String" DbType="NChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xIsmecanical" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xisglobal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="mdeviceset2_mdeviceset3" Member="mdeviceset3s" ThisKey="xcodfinalset2" OtherKey="xparentid" Type="mdeviceset3" />
+      <Association Name="mdeviceset1_mdeviceset2" Member="mdeviceset1" ThisKey="xparentid" OtherKey="xcod" Type="mdeviceset1" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mdeviceset3" Member="mdeviceset3s">
+    <Type Name="mdeviceset3">
+      <Column Name="xparentid" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="xnameset3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xid" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="xcodfinalset3" Type="System.String" DbType="NChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xismecanical" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="mdeviceset2_mdeviceset3" Member="mdeviceset2" ThisKey="xparentid" OtherKey="xcodfinalset2" Type="mdeviceset2" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mobjectcod" Member="mobjectcods">
+    <Type Name="mobjectcod">
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(3)" CanBeNull="true" />
+      <Column Name="knid" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="xcodfinal" Type="System.String" DbType="NChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xvahed" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xname_English" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mlocation" Member="mlocations">
+    <Type Name="mlocation">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xnameoflocation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xcodoflocation" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Deletefromdeviceset2" Method="Deletefromdeviceset2">
+    <Parameter Name="xdevice_cod" Type="System.String" DbType="NChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Deletefromobject" Method="Deletefromobject">
+    <Parameter Name="xid" Type="System.String" DbType="NChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Deletefromobjectset2table" Method="Deletefromobjectset2table">
+    <Parameter Name="xcod" Type="System.String" DbType="NChar(25)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Selectallobject" Method="Selectallobject">
+    <Parameter Name="cod" Type="System.String" DbType="NChar(28)" />
+    <ElementType Name="SelectallobjectResult">
+      <Column Name="xcod" Type="System.String" DbType="NChar(28) NOT NULL" CanBeNull="false" />
+      <Column Name="xname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xnamedevice" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xnumber" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="xnameset1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xnameset2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xnameset3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="oloaviyat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Updatemallobject" Method="Updatemallobject">
+    <Parameter Name="count" Type="System.Int32" DbType="Int" />
+    <Parameter Name="oloaviyat" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="xcod" Type="System.String" DbType="NChar(28)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Updateobject_set2_count" Method="Updateobject_set2_count">
+    <Parameter Name="xcount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xcod" Type="System.String" DbType="NChar(25)" />
+    <ElementType Name="Updateobject_set2_countResult">
+      <Column Name="xid_parent" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="xid" Type="System.String" DbType="NChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="xcount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xcod" Type="System.String" DbType="NChar(25) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

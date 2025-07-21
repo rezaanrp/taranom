@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsinteruptplan" targetNamespace="http://tempuri.org/dsinteruptplan.xsd" xmlns:mstns="http://tempuri.org/dsinteruptplan.xsd" xmlns="http://tempuri.org/dsinteruptplan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="payazobnetConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="payazobnetConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PAYADATA.Properties.Settings.GlobalReference.Default.payazobnetConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="minterupt_planTableAdapter" GeneratorDataComponentClassName="minterupt_planTableAdapter" Name="minterupt_plan" UserDataComponentName="minterupt_planTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        minterupt_plan.xid, minterupt_plan.xdate_plan, minterupt_plan.xdatestart_interupt, minterupt_plan.xtime_startinterupt, minterupt_plan.xdate_endinterupt, 
+                         minterupt_plan.xtime_endinterupt, minterupt_plan.xdevice_cod, minterupt_plan.xname_operator_deliveryof, minterupt_plan.xname_operator_transferee, 
+                         minterupt_plan.xexplain_havoc, minterupt_plan.xexplain_activity, minterupt_plan.xcause_delay_in_service, minterupt_plan.xtime_interupt, minterupt_plan.xdelay, 
+                         device.xnamedevice, device.xnumber
+FROM            minterupt_plan INNER JOIN
+                         device ON minterupt_plan.xdevice_cod = device.xcod</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="xid" DataSetColumn="xid" />
+              <Mapping SourceColumn="xdate_plan" DataSetColumn="xdate_plan" />
+              <Mapping SourceColumn="xdatestart_interupt" DataSetColumn="xdatestart_interupt" />
+              <Mapping SourceColumn="xtime_startinterupt" DataSetColumn="xtime_startinterupt" />
+              <Mapping SourceColumn="xdate_endinterupt" DataSetColumn="xdate_endinterupt" />
+              <Mapping SourceColumn="xtime_endinterupt" DataSetColumn="xtime_endinterupt" />
+              <Mapping SourceColumn="xdevice_cod" DataSetColumn="xdevice_cod" />
+              <Mapping SourceColumn="xname_operator_deliveryof" DataSetColumn="xname_operator_deliveryof" />
+              <Mapping SourceColumn="xname_operator_transferee" DataSetColumn="xname_operator_transferee" />
+              <Mapping SourceColumn="xexplain_havoc" DataSetColumn="xexplain_havoc" />
+              <Mapping SourceColumn="xexplain_activity" DataSetColumn="xexplain_activity" />
+              <Mapping SourceColumn="xtime_interupt" DataSetColumn="xtime_interupt" />
+              <Mapping SourceColumn="xdelay" DataSetColumn="xdelay" />
+              <Mapping SourceColumn="xnamedevice" DataSetColumn="xnamedevice" />
+              <Mapping SourceColumn="xnumber" DataSetColumn="xnumber" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Delete_from_interupt_plan" Modifier="Public" Name="Delete_from_interupt_plan" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Delete_from_interupt_plan">
+                <DeleteCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Delete_from_interupt_plan</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xid" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Update_interupt_plan" Modifier="Public" Name="Update_interupt_plan" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="Update_interupt_plan">
+                <UpdateCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="true">
+                    <CommandText>dbo.Update_interupt_plan</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdate_plan" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdatestart_interupt" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xtime_startinterupt" Precision="0" ProviderType="NChar" Scale="0" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdate_endinterupt" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xtime_endinterupt" Precision="0" ProviderType="NChar" Scale="0" Size="5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xdevice_cod" Precision="0" ProviderType="NChar" Scale="0" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xname_operator_deliveryof" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xname_operator_transferee" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xexplain_havoc" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xexplain_activity" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xcause_delay_in_service" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xtime_interupt" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@xdelay" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xid" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_interuptplanTableAdapter" GeneratorDataComponentClassName="Select_interuptplanTableAdapter" Name="Select_interuptplan" UserDataComponentName="Select_interuptplanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectName="payazobnet.dbo.Select_interuptplan" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_interuptplan</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@datefrom" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@dateto" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Update_interuptplan</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdate_plan" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumn="xdate_plan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdatestart_interupt" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumn="xdatestart_interupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xtime_startinterupt" Precision="0" ProviderType="NChar" Scale="0" Size="5" SourceColumn="xtime_startinterupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime2" DbType="DateTime2" Direction="Input" ParameterName="@xdate_endinterupt" Precision="27" ProviderType="DateTime2" Scale="7" Size="8" SourceColumn="xdate_endinterupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xtime_endinterupt" Precision="0" ProviderType="NChar" Scale="0" Size="5" SourceColumn="xtime_endinterupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@xdevice_cod" Precision="0" ProviderType="NChar" Scale="0" Size="6" SourceColumn="xdevice_cod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xname_operator_deliveryof" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="xname_operator_deliveryof" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xname_operator_transferee" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="xname_operator_transferee" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xexplain_havoc" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="xexplain_havoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xexplain_activity" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="xexplain_activity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xcause_delay_in_service" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="xcause_delay_in_service" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xtime_interupt" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xtime_interupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@xdelay" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumn="xdelay" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xid" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@xmountly" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumn="xmountly" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="xid" DataSetColumn="xid" />
+              <Mapping SourceColumn="xdate_plan" DataSetColumn="xdate_plan" />
+              <Mapping SourceColumn="xdatestart_interupt" DataSetColumn="xdatestart_interupt" />
+              <Mapping SourceColumn="xtime_startinterupt" DataSetColumn="xtime_startinterupt" />
+              <Mapping SourceColumn="xdate_endinterupt" DataSetColumn="xdate_endinterupt" />
+              <Mapping SourceColumn="xtime_endinterupt" DataSetColumn="xtime_endinterupt" />
+              <Mapping SourceColumn="xdevice_cod" DataSetColumn="xdevice_cod" />
+              <Mapping SourceColumn="xname_operator_deliveryof" DataSetColumn="xname_operator_deliveryof" />
+              <Mapping SourceColumn="xname_operator_transferee" DataSetColumn="xname_operator_transferee" />
+              <Mapping SourceColumn="xexplain_havoc" DataSetColumn="xexplain_havoc" />
+              <Mapping SourceColumn="xexplain_activity" DataSetColumn="xexplain_activity" />
+              <Mapping SourceColumn="xtime_interupt" DataSetColumn="xtime_interupt" />
+              <Mapping SourceColumn="xdelay" DataSetColumn="xdelay" />
+              <Mapping SourceColumn="xmountly" DataSetColumn="xmountly" />
+              <Mapping SourceColumn="xnamedevice" DataSetColumn="xnamedevice" />
+              <Mapping SourceColumn="xnumber" DataSetColumn="xnumber" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="payazobnetConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        minterupt_plan.xid, minterupt_plan.xdate_plan, minterupt_plan.xdatestart_interupt, minterupt_plan.xtime_startinterupt, minterupt_plan.xdate_endinterupt, 
+                         minterupt_plan.xtime_endinterupt, minterupt_plan.xdevice_cod, minterupt_plan.xname_operator_deliveryof, minterupt_plan.xname_operator_transferee, 
+                         minterupt_plan.xexplain_havoc, minterupt_plan.xexplain_activity, minterupt_plan.xtime_interupt, minterupt_plan.xdelay, minterupt_plan.xmountly, 
+                         mdetailsdevice.xnamedevice, device.xnumber
+FROM            minterupt_plan INNER JOIN
+                         device ON minterupt_plan.xdevice_cod = device.xcod INNER JOIN
+                         mdetailsdevice ON device.xiddevice = mdetailsdevice.xcoddevice
+WHERE        (minterupt_plan.xdatestart_interupt &gt;= @fromdate) AND (minterupt_plan.xdatestart_interupt &lt;= @todate)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="fromdate" ColumnName="xdatestart_interupt" DataSourceName="payazobnet.dbo.minterupt_plan" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@fromdate" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="xdatestart_interupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="todate" ColumnName="xdatestart_interupt" DataSourceName="payazobnet.dbo.minterupt_plan" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@todate" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="xdatestart_interupt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsinteruptplan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsinteruptplan" msprop:Generator_UserDSName="dsinteruptplan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="minterupt_plan" msprop:Generator_TableClassName="minterupt_planDataTable" msprop:Generator_TableVarName="tableminterupt_plan" msprop:Generator_TablePropName="minterupt_plan" msprop:Generator_RowDeletingName="minterupt_planRowDeleting" msprop:Generator_UserTableName="minterupt_plan" msprop:Generator_RowChangingName="minterupt_planRowChanging" msprop:Generator_RowEvHandlerName="minterupt_planRowChangeEventHandler" msprop:Generator_RowDeletedName="minterupt_planRowDeleted" msprop:Generator_RowEvArgName="minterupt_planRowChangeEvent" msprop:Generator_RowChangedName="minterupt_planRowChanged" msprop:Generator_RowClassName="minterupt_planRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="xid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnxid" msprop:Generator_ColumnPropNameInRow="xid" msprop:Generator_ColumnPropNameInTable="xidColumn" msprop:Generator_UserColumnName="xid" type="xs:int" />
+              <xs:element name="xdate_plan" msprop:Generator_ColumnVarNameInTable="columnxdate_plan" msprop:Generator_ColumnPropNameInRow="xdate_plan" msprop:Generator_ColumnPropNameInTable="xdate_planColumn" msprop:Generator_UserColumnName="xdate_plan" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xdatestart_interupt" msprop:Generator_ColumnVarNameInTable="columnxdatestart_interupt" msprop:Generator_ColumnPropNameInRow="xdatestart_interupt" msprop:Generator_ColumnPropNameInTable="xdatestart_interuptColumn" msprop:Generator_UserColumnName="xdatestart_interupt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xtime_startinterupt" msprop:Generator_ColumnVarNameInTable="columnxtime_startinterupt" msprop:Generator_ColumnPropNameInRow="xtime_startinterupt" msprop:Generator_ColumnPropNameInTable="xtime_startinteruptColumn" msprop:Generator_UserColumnName="xtime_startinterupt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xdate_endinterupt" msprop:Generator_ColumnVarNameInTable="columnxdate_endinterupt" msprop:Generator_ColumnPropNameInRow="xdate_endinterupt" msprop:Generator_ColumnPropNameInTable="xdate_endinteruptColumn" msprop:Generator_UserColumnName="xdate_endinterupt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xtime_endinterupt" msprop:Generator_ColumnVarNameInTable="columnxtime_endinterupt" msprop:Generator_ColumnPropNameInRow="xtime_endinterupt" msprop:Generator_ColumnPropNameInTable="xtime_endinteruptColumn" msprop:Generator_UserColumnName="xtime_endinterupt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xdevice_cod" msprop:Generator_ColumnVarNameInTable="columnxdevice_cod" msprop:Generator_ColumnPropNameInRow="xdevice_cod" msprop:Generator_ColumnPropNameInTable="xdevice_codColumn" msprop:Generator_UserColumnName="xdevice_cod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xname_operator_deliveryof" msprop:Generator_ColumnVarNameInTable="columnxname_operator_deliveryof" msprop:Generator_ColumnPropNameInRow="xname_operator_deliveryof" msprop:Generator_ColumnPropNameInTable="xname_operator_deliveryofColumn" msprop:Generator_UserColumnName="xname_operator_deliveryof" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xname_operator_transferee" msprop:Generator_ColumnVarNameInTable="columnxname_operator_transferee" msprop:Generator_ColumnPropNameInRow="xname_operator_transferee" msprop:Generator_ColumnPropNameInTable="xname_operator_transfereeColumn" msprop:Generator_UserColumnName="xname_operator_transferee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xexplain_havoc" msprop:Generator_ColumnVarNameInTable="columnxexplain_havoc" msprop:Generator_ColumnPropNameInRow="xexplain_havoc" msprop:Generator_ColumnPropNameInTable="xexplain_havocColumn" msprop:Generator_UserColumnName="xexplain_havoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xexplain_activity" msprop:Generator_ColumnVarNameInTable="columnxexplain_activity" msprop:Generator_ColumnPropNameInRow="xexplain_activity" msprop:Generator_ColumnPropNameInTable="xexplain_activityColumn" msprop:Generator_UserColumnName="xexplain_activity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xtime_interupt" msprop:Generator_ColumnVarNameInTable="columnxtime_interupt" msprop:Generator_ColumnPropNameInRow="xtime_interupt" msprop:Generator_ColumnPropNameInTable="xtime_interuptColumn" msprop:Generator_UserColumnName="xtime_interupt" type="xs:int" minOccurs="0" />
+              <xs:element name="xdelay" msprop:Generator_ColumnVarNameInTable="columnxdelay" msprop:Generator_ColumnPropNameInRow="xdelay" msprop:Generator_ColumnPropNameInTable="xdelayColumn" msprop:Generator_UserColumnName="xdelay" type="xs:boolean" minOccurs="0" />
+              <xs:element name="xnamedevice" msprop:Generator_ColumnVarNameInTable="columnxnamedevice" msprop:Generator_ColumnPropNameInRow="xnamedevice" msprop:Generator_ColumnPropNameInTable="xnamedeviceColumn" msprop:Generator_UserColumnName="xnamedevice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xnumber" msprop:Generator_ColumnVarNameInTable="columnxnumber" msprop:Generator_ColumnPropNameInRow="xnumber" msprop:Generator_ColumnPropNameInTable="xnumberColumn" msprop:Generator_UserColumnName="xnumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_interuptplan" msprop:Generator_TableClassName="Select_interuptplanDataTable" msprop:Generator_TableVarName="tableSelect_interuptplan" msprop:Generator_TablePropName="Select_interuptplan" msprop:Generator_RowDeletingName="Select_interuptplanRowDeleting" msprop:Generator_UserTableName="Select_interuptplan" msprop:Generator_RowChangingName="Select_interuptplanRowChanging" msprop:Generator_RowEvHandlerName="Select_interuptplanRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_interuptplanRowDeleted" msprop:Generator_RowEvArgName="Select_interuptplanRowChangeEvent" msprop:Generator_RowChangedName="Select_interuptplanRowChanged" msprop:Generator_RowClassName="Select_interuptplanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="xid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnxid" msprop:Generator_ColumnPropNameInRow="xid" msprop:Generator_ColumnPropNameInTable="xidColumn" msprop:Generator_UserColumnName="xid" type="xs:int" />
+              <xs:element name="xdate_plan" msprop:Generator_ColumnVarNameInTable="columnxdate_plan" msprop:Generator_ColumnPropNameInRow="xdate_plan" msprop:Generator_ColumnPropNameInTable="xdate_planColumn" msprop:Generator_UserColumnName="xdate_plan" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xdatestart_interupt" msprop:Generator_ColumnVarNameInTable="columnxdatestart_interupt" msprop:Generator_ColumnPropNameInRow="xdatestart_interupt" msprop:Generator_ColumnPropNameInTable="xdatestart_interuptColumn" msprop:Generator_UserColumnName="xdatestart_interupt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xtime_startinterupt" msprop:Generator_ColumnVarNameInTable="columnxtime_startinterupt" msprop:Generator_ColumnPropNameInRow="xtime_startinterupt" msprop:Generator_ColumnPropNameInTable="xtime_startinteruptColumn" msprop:Generator_UserColumnName="xtime_startinterupt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xdate_endinterupt" msprop:Generator_ColumnVarNameInTable="columnxdate_endinterupt" msprop:Generator_ColumnPropNameInRow="xdate_endinterupt" msprop:Generator_ColumnPropNameInTable="xdate_endinteruptColumn" msprop:Generator_UserColumnName="xdate_endinterupt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="xtime_endinterupt" msprop:Generator_ColumnVarNameInTable="columnxtime_endinterupt" msprop:Generator_ColumnPropNameInRow="xtime_endinterupt" msprop:Generator_ColumnPropNameInTable="xtime_endinteruptColumn" msprop:Generator_UserColumnName="xtime_endinterupt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xdevice_cod" msprop:Generator_ColumnVarNameInTable="columnxdevice_cod" msprop:Generator_ColumnPropNameInRow="xdevice_cod" msprop:Generator_ColumnPropNameInTable="xdevice_codColumn" msprop:Generator_UserColumnName="xdevice_cod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xname_operator_deliveryof" msprop:Generator_ColumnVarNameInTable="columnxname_operator_deliveryof" msprop:Generator_ColumnPropNameInRow="xname_operator_deliveryof" msprop:Generator_ColumnPropNameInTable="xname_operator_deliveryofColumn" msprop:Generator_UserColumnName="xname_operator_deliveryof" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xname_operator_transferee" msprop:Generator_ColumnVarNameInTable="columnxname_operator_transferee" msprop:Generator_ColumnPropNameInRow="xname_operator_transferee" msprop:Generator_ColumnPropNameInTable="xname_operator_transfereeColumn" msprop:Generator_UserColumnName="xname_operator_transferee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xexplain_havoc" msprop:Generator_ColumnVarNameInTable="columnxexplain_havoc" msprop:Generator_ColumnPropNameInRow="xexplain_havoc" msprop:Generator_ColumnPropNameInTable="xexplain_havocColumn" msprop:Generator_UserColumnName="xexplain_havoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xexplain_activity" msprop:Generator_ColumnVarNameInTable="columnxexplain_activity" msprop:Generator_ColumnPropNameInRow="xexplain_activity" msprop:Generator_ColumnPropNameInTable="xexplain_activityColumn" msprop:Generator_UserColumnName="xexplain_activity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xtime_interupt" msprop:Generator_ColumnVarNameInTable="columnxtime_interupt" msprop:Generator_ColumnPropNameInRow="xtime_interupt" msprop:Generator_ColumnPropNameInTable="xtime_interuptColumn" msprop:Generator_UserColumnName="xtime_interupt" type="xs:int" minOccurs="0" />
+              <xs:element name="xdelay" msprop:Generator_ColumnVarNameInTable="columnxdelay" msprop:Generator_ColumnPropNameInRow="xdelay" msprop:Generator_ColumnPropNameInTable="xdelayColumn" msprop:Generator_UserColumnName="xdelay" type="xs:boolean" minOccurs="0" />
+              <xs:element name="xmountly" msprop:Generator_ColumnVarNameInTable="columnxmountly" msprop:Generator_ColumnPropNameInRow="xmountly" msprop:Generator_ColumnPropNameInTable="xmountlyColumn" msprop:Generator_UserColumnName="xmountly" type="xs:boolean" minOccurs="0" />
+              <xs:element name="xnamedevice" msprop:Generator_ColumnVarNameInTable="columnxnamedevice" msprop:Generator_ColumnPropNameInRow="xnamedevice" msprop:Generator_ColumnPropNameInTable="xnamedeviceColumn" msprop:Generator_UserColumnName="xnamedevice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xnumber" msprop:Generator_ColumnVarNameInTable="columnxnumber" msprop:Generator_ColumnPropNameInRow="xnumber" msprop:Generator_ColumnPropNameInTable="xnumberColumn" msprop:Generator_UserColumnName="xnumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:minterupt_plan" />
+      <xs:field xpath="mstns:xid" />
+    </xs:unique>
+    <xs:unique name="Select_interuptplan_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_interuptplan" />
+      <xs:field xpath="mstns:xid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

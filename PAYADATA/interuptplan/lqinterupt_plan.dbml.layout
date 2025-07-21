@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="lqinterupt_plan">
+  <DataContextMoniker Name="/lqinterupt_planDataContext" />
+  <nestedChildShapes>
+    <classShape Id="32b40275-3383-44a0-99ce-7848ae5bdef3" absoluteBounds="5.375, 3.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/mserviceman_hour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc58561a-3801-4a60-9ab9-0b85c0b2c8b7" absoluteBounds="5.3900000000000006, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="216c8bcf-2bdc-4b6d-b962-a1aec483d8b6" absoluteBounds="0.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/mservic_device" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fbd068e-261d-46cf-aaf7-cf8a3baddb31" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e5c2003-c9ad-4289-b8a0-c29762494e2f" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/mservicefor_interupt_plan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80caee73-7040-45a5-98ba-22dd576b06f8" absoluteBounds="3.7649999999999997, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.69794840494792); (3.75 : 1.69794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/lqinterupt_planDataContext/mservic_device/mservic_device_mservicefor_interupt_plan" />
+      <nodes>
+        <classShapeMoniker Id="216c8bcf-2bdc-4b6d-b962-a1aec483d8b6" />
+        <classShapeMoniker Id="7e5c2003-c9ad-4289-b8a0-c29762494e2f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3865d143-e824-4a1e-960f-e9ae9898a335" absoluteBounds="0.875, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/mselectdemuer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="898d8b5a-5ddc-4b8e-bbd6-aa7824f4a0b8" absoluteBounds="0.89000000000000012, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5b5c182-38fe-4dc7-9ede-cdd1ed189be1" isExpanded="false" absoluteBounds="3.25, 3, 2, 0.45">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/minterupt_plan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ca23051-dd79-4de2-8f2a-b852df3a7912" absoluteBounds="3.265, 3.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 3); (4.5 : 2.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/lqinterupt_planDataContext/minterupt_plan/minterupt_plan_mservicefor_interupt_plan" />
+      <nodes>
+        <classShapeMoniker Id="b5b5c182-38fe-4dc7-9ede-cdd1ed189be1" />
+        <classShapeMoniker Id="7e5c2003-c9ad-4289-b8a0-c29762494e2f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="20b34370-c315-41a4-949d-9b61da26f8db" absoluteBounds="6.25, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/lqinterupt_planDataContext/mobject_disposal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5dcfb2c-7c9b-4626-a629-52d170d63b44" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

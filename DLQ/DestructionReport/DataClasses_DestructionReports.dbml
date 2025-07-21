@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Payazob" Class="DataClasses_DestructionReportsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.149.80;Initial Catalog=Payazob;Persist Security Info=True;User ID=MISPAYA" SettingsObjectName="DLQ.Properties.Settings" SettingsPropertyName="PayazobConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mDestructionReport" Member="mDestructionReports">
+    <Type Name="mDestructionReport" Id="ID1">
+      <Column Name="x_" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xDate" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="xDateProduction" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="xPieces_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xTractionTest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xTensionTest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xGrindingPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xDefect" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="xGprResult_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xApprove_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xDepth" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="xComment" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.UpdateDestructionReport" Method="UpdateDestructionReport">
+    <Parameter Name="x_" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xDate" Type="System.String" DbType="Char(10)" />
+    <Parameter Name="xShift_" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xDateProduction" Type="System.String" DbType="Char(10)" />
+    <Parameter Name="xPiceces_" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="xGrindingPlace" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="xDepth" Type="System.Decimal" DbType="Decimal(4,2)" />
+    <Parameter Name="xResult" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="xComment" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="xApprove_" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SelectDestructionReportByDate" Method="SelectDestructionReportByDate">
+    <Parameter Name="DateFrom" Parameter="dateFrom" Type="System.String" DbType="Char(10)" />
+    <Parameter Name="DateTo" Parameter="dateTo" Type="System.String" DbType="Char(10)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>

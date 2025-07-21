@@ -1,0 +1,506 @@
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\ControlLibrary.dll
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\ControlLibrary.pdb
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.dll
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.pdb
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.ucSubmenu.resources
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\GenerateResource.read.1.tlog
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\GenerateResource.write.1.tlog
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\BLL.dll
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\DAL.dll
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\BLL.pdb
+E:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\DAL.pdb
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+E:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\BLL.dll
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\DAL.dll
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\BLL.pdb
+D:\rtv\Payazob\Payazob\ControlLibrary\bin\Debug\DAL.pdb
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\GenerateResource.read.1.tlog
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\GenerateResource.write.1.tlog
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\rtv\Payazob\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\ControlLibrary.dll
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\ControlLibrary.pdb
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\BLL.dll
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\DAL.dll
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\BLL.pdb
+\\192.168.15.60\Payazob\ControlLibrary\bin\Debug\DAL.pdb
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\GenerateResource.read.1.tlog
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\GenerateResource.write.1.tlog
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.dll
+\\192.168.15.60\Payazob\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\Payazob\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\Payazob\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\Payazob\ControlLibrary\bin\Debug\BLL.dll
+D:\Payazob\ControlLibrary\bin\Debug\DAL.dll
+D:\Payazob\ControlLibrary\bin\Debug\BLL.pdb
+D:\Payazob\ControlLibrary\bin\Debug\DAL.pdb
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\Payazob\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.csprojResolveAssemblyReference.cache
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.Cache
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+D:\Payazob\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+D:\Payazob\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+E:\3\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojResolveAssemblyReference.cache
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.Cache
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+E:\3\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojResolveAssemblyReference.cache
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.Cache
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+E:\3\Pa0yazob000\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+D:\MIS\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\MIS\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\Pa0yazob\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+D:\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\MIS\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+C:\Users\reza\Desktop\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ControlLibrary.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\ShDateTimePicker.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\stdole.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\BLL.dll.config
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\bin\Debug\DAL.dll.config
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.CustomToolTip.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxdete.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.textboxtime.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UCselectyearandmonth.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.ucStatusBar.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_btnRightMenu.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ChangePassword.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Chart.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_CmbAutoByFilter.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_combobox.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewBtn.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_DataGridViewCellCalc.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Details.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Filter_Date.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_filter_Picese.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_GridView.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_ListFiled.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_LoadFile.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MessageBox.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Month.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_MsChart.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtDate.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_mtxtNumber.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_PanelBox.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_Poem.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_RegisteringGroup.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SaveFileFromSql.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_SearchData.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\UC.uc_TextBox.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_TreeView.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.uc_txtBox.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.UserControl1.resources
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.dll
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.pdb
+C:\Users\reza\Desktop\New folder\TARANOM\Pa0yazob000\ControlLibrary\obj\Debug\ControlLibrary.csproj.AssemblyReference.cache

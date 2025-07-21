@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PayazobModelAid.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PayazobModelAidStoreContainer">
+    <EntitySet Name="mGenGroup" EntityType="PayazobModelAid.Store.mGenGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mPersonInfo" EntityType="PayazobModelAid.Store.mPersonInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mSectionAid" EntityType="PayazobModelAid.Store.mSectionAid" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_mPersonInfo_mGenGroup" Association="PayazobModelAid.Store.FK_mPersonInfo_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mPersonInfo_mGenGroup1" Association="PayazobModelAid.Store.FK_mPersonInfo_mGenGroup1">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mSectionAid_mGenGroup" Association="PayazobModelAid.Store.FK_mSectionAid_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mSectionAid" EntitySet="mSectionAid" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="mGenGroup">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="xType" Type="nvarchar" MaxLength="10" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="mPersonInfo">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFamily" Type="nvarchar" MaxLength="50" />
+    <Property Name="xPerID" Type="nchar" MaxLength="10" />
+    <Property Name="xEmail" Type="varchar" MaxLength="100" />
+    <Property Name="xSex_" Type="int" />
+    <Property Name="xNationalCode" Type="char" MaxLength="10" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="300" />
+    <Property Name="xMob" Type="varchar" MaxLength="50" />
+    <Property Name="xTel" Type="varchar" MaxLength="50" />
+    <Property Name="xFatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xIdentity" Type="nchar" MaxLength="10" />
+    <Property Name="xActive" Type="bit" />
+    <Property Name="xSection_" Type="int" />
+  </EntityType>
+  <EntityType Name="mSectionAid">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenGroup_" Type="int" />
+  </EntityType>
+  <Association Name="FK_mPersonInfo_mGenGroup">
+    <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+    <End Role="mPersonInfo" Type="PayazobModelAid.Store.mPersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mPersonInfo">
+        <PropertyRef Name="xSection_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mPersonInfo_mGenGroup1">
+    <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+    <End Role="mPersonInfo" Type="PayazobModelAid.Store.mPersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mPersonInfo">
+        <PropertyRef Name="xSex_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mSectionAid_mGenGroup">
+    <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+    <End Role="mSectionAid" Type="PayazobModelAid.Store.mSectionAid" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mSectionAid">
+        <PropertyRef Name="xGenGroup_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

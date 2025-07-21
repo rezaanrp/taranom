@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86D61CA8-D8D4-4E31-A740-0E2548E6B4DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlLibrary</RootNamespace>
+    <AssemblyName>ControlLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ShDateTimePicker">
+      <HintPath>..\Payazob\dll\ShDateTimePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomToolTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomToolTip.Designer.cs">
+      <DependentUpon>CustomToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses.cs" />
+    <Compile Include="GanttChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedBulb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopUp\GripBounds.cs" />
+    <Compile Include="PopUp\NativeMethods.cs" />
+    <Compile Include="PopUp\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopUp\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\PopupAnimations.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="textboxdete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="textboxdete.Designer.cs">
+      <DependentUpon>textboxdete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="textboxtime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="textboxtime.Designer.cs">
+      <DependentUpon>textboxtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCselectyearandmonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCselectyearandmonth.Designer.cs">
+      <DependentUpon>UCselectyearandmonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_bindingNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_bindingNavigator.Designer.cs">
+      <DependentUpon>uc_bindingNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_btn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_btn.Designer.cs">
+      <DependentUpon>uc_btn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_btnRightMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_btnRightMenu.Designer.cs">
+      <DependentUpon>uc_btnRightMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_ChangePassword.Designer.cs">
+      <DependentUpon>uc_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_cmbAuto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucStatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStatusBar.Designer.cs">
+      <DependentUpon>ucStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Chart.Designer.cs">
+      <DependentUpon>uc_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_CmbAutoByFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_CmbAutoByFilter.Designer.cs">
+      <DependentUpon>uc_CmbAutoByFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_combobox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_combobox.Designer.cs">
+      <DependentUpon>uc_combobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_DataGridViewBtn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_DataGridViewBtn.Designer.cs">
+      <DependentUpon>uc_DataGridViewBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_DataGridViewCellCalc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_DataGridViewCellCalc.Designer.cs">
+      <DependentUpon>uc_DataGridViewCellCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Details.Designer.cs">
+      <DependentUpon>uc_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ExportExcelFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_Filter_Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Filter_Date.Designer.cs">
+      <DependentUpon>uc_Filter_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_filter_Picese.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_filter_Picese.Designer.cs">
+      <DependentUpon>uc_filter_Picese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_GridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_GridView.Designer.cs">
+      <DependentUpon>uc_GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_lblFiled.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_lblFiled.Designer.cs">
+      <DependentUpon>uc_lblFiled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ListFiled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_ListFiled.Designer.cs">
+      <DependentUpon>uc_ListFiled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_LoadFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_LoadFile.Designer.cs">
+      <DependentUpon>uc_LoadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_MessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_MessageBox.Designer.cs">
+      <DependentUpon>uc_MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Month.Designer.cs">
+      <DependentUpon>uc_Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_MsChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_MsChart.Designer.cs">
+      <DependentUpon>uc_MsChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_mtxtDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_mtxtDate.Designer.cs">
+      <DependentUpon>uc_mtxtDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_mtxtNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_mtxtNumber.Designer.cs">
+      <DependentUpon>uc_mtxtNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_PanelBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_PanelBox.Designer.cs">
+      <DependentUpon>uc_PanelBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Poem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Poem.Designer.cs">
+      <DependentUpon>uc_Poem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_RegisteringGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_RegisteringGroup.Designer.cs">
+      <DependentUpon>uc_RegisteringGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_SaveFileFromSql.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_SaveFileFromSql.Designer.cs">
+      <DependentUpon>uc_SaveFileFromSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_SearchData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_SearchData.Designer.cs">
+      <DependentUpon>uc_SearchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_TextBox.Designer.cs">
+      <DependentUpon>uc_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_TextBoxDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_TextBoxDate.Designer.cs">
+      <DependentUpon>uc_TextBoxDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_TreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_TreeView.Designer.cs">
+      <DependentUpon>uc_TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_txtBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uc_txtBox.Designer.cs">
+      <DependentUpon>uc_txtBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomToolTip.resx">
+      <DependentUpon>CustomToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="textboxdete.resx">
+      <DependentUpon>textboxdete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="textboxtime.resx">
+      <DependentUpon>textboxtime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCselectyearandmonth.resx">
+      <DependentUpon>UCselectyearandmonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStatusBar.resx">
+      <DependentUpon>ucStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_btnRightMenu.resx">
+      <DependentUpon>uc_btnRightMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_ChangePassword.resx">
+      <DependentUpon>uc_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Chart.resx">
+      <DependentUpon>uc_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_CmbAutoByFilter.resx">
+      <DependentUpon>uc_CmbAutoByFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_combobox.resx">
+      <DependentUpon>uc_combobox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_DataGridViewBtn.resx">
+      <DependentUpon>uc_DataGridViewBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_DataGridViewCellCalc.resx">
+      <DependentUpon>uc_DataGridViewCellCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Details.resx">
+      <DependentUpon>uc_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Filter_Date.resx">
+      <DependentUpon>uc_Filter_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_filter_Picese.resx">
+      <DependentUpon>uc_filter_Picese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_GridView.resx">
+      <DependentUpon>uc_GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_ListFiled.resx">
+      <DependentUpon>uc_ListFiled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_LoadFile.resx">
+      <DependentUpon>uc_LoadFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_MessageBox.resx">
+      <DependentUpon>uc_MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Month.resx">
+      <DependentUpon>uc_Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_MsChart.resx">
+      <DependentUpon>uc_MsChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_mtxtDate.resx">
+      <DependentUpon>uc_mtxtDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_mtxtNumber.resx">
+      <DependentUpon>uc_mtxtNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_PanelBox.resx">
+      <DependentUpon>uc_PanelBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Poem.resx">
+      <DependentUpon>uc_Poem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_RegisteringGroup.resx">
+      <DependentUpon>uc_RegisteringGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_SaveFileFromSql.resx">
+      <DependentUpon>uc_SaveFileFromSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_SearchData.resx">
+      <DependentUpon>uc_SearchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_TextBox.resx">
+      <DependentUpon>uc_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_TreeView.resx">
+      <DependentUpon>uc_TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_txtBox.resx">
+      <DependentUpon>uc_txtBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{D909B9D2-4EA0-4C0C-8588-B9D4A98C5BDE}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\filetype_pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GanttChart.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

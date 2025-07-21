@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Datalinqpercentrealizationprogram">
+  <DataContextMoniker Name="/DatalinqpercentrealizationprogramDataContext" />
+  <nestedChildShapes>
+    <classShape Id="177f6e54-1515-4997-b854-78e44d1de64b" absoluteBounds="4.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DatalinqpercentrealizationprogramDataContext/mserviceprogram" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42daaaf7-1b7a-44ed-87fc-5dbc90bba104" absoluteBounds="4.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df0a2e36-194f-4ba1-a940-20ff06494853" absoluteBounds="2.625, 0.75, 2, 3.1170068359375009">
+      <DataClassMoniker Name="/DatalinqpercentrealizationprogramDataContext/mserviceprogramheader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c248a48-297f-4f61-b43a-4942f999ffe0" absoluteBounds="2.6399999999999997, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 2.02005126953125); (4.75 : 2.02005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatalinqpercentrealizationprogramDataContext/mserviceprogramheader/mserviceprogramheader_mserviceprogram" />
+      <nodes>
+        <classShapeMoniker Id="df0a2e36-194f-4ba1-a940-20ff06494853" />
+        <classShapeMoniker Id="177f6e54-1515-4997-b854-78e44d1de64b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="26e95334-74bb-40e4-a45f-1385fd945890" absoluteBounds="0.5, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DatalinqpercentrealizationprogramDataContext/mpercent_realization_program" />
+      <nestedChildShapes>
+        <elementListCompartment Id="794c720d-9601-4f51-a38f-7563d7d57120" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

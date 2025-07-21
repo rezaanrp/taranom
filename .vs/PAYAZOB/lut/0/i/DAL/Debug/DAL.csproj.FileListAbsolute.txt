@@ -1,0 +1,7 @@
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\b\DAL\bin\Debug\DAL.dll.config
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\b\DAL\bin\Debug\DAL.dll
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\DAL\Debug\DAL.csprojAssemblyReference.cache
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\DAL\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\DAL\Debug\DAL.csproj.CopyComplete
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\DAL\Debug\DAL.dll
+D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\b\DAL\bin\Debug\DAL.dll.CodeAnalysisLog.xml

@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Material" targetNamespace="http://tempuri.org/DataSet_Material.xsd" xmlns:mstns="http://tempuri.org/DataSet_Material.xsd" xmlns="http://tempuri.org/DataSet_Material.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PayazobConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PayazobConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL.Properties.Settings.GlobalReference.Default.PayazobConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mMaterialTableAdapter" GeneratorDataComponentClassName="mMaterialTableAdapter" Name="mMaterial" UserDataComponentName="mMaterialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.mMaterial" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        x_, xMaterialName
+FROM            mMaterial
+ORDER BY xMaterialName</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xMaterialName" DataSetColumn="xMaterialName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SlMaterialAndScarbTableAdapter" GeneratorDataComponentClassName="SlMaterialAndScarbTableAdapter" Name="SlMaterialAndScarb" UserDataComponentName="SlMaterialAndScarbTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.mMaterial" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        x_, xMaterialName, xGenType_
+FROM            mMaterial
+WHERE        (xGenType_ =59) OR
+                         (xGenType_ =60)
+ORDER BY xMaterialName</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xMaterialName" DataSetColumn="xMaterialName" />
+              <Mapping SourceColumn="xGenType_" DataSetColumn="xGenType_" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SlModuleTableAdapter" GeneratorDataComponentClassName="SlModuleTableAdapter" Name="SlModule" UserDataComponentName="SlModuleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.SlModule" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.SlModule</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xModuleName" DataSetColumn="xModuleName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mMaterialForLocationTableAdapter" GeneratorDataComponentClassName="mMaterialForLocationTableAdapter" Name="mMaterialForLocation" UserDataComponentName="mMaterialForLocationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.mMaterial" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        x_, xMaterialName
+FROM            mMaterial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xMaterialName" DataSetColumn="xMaterialName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SlMaterialTableAdapter" GeneratorDataComponentClassName="SlMaterialTableAdapter" Name="SlMaterial" UserDataComponentName="SlMaterialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.SlMaterial" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.DlMaterial</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@x_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="x_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.InMaterial</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xMaterialName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="xMaterialName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="char" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@xType" Precision="0" ProviderType="Char" Scale="0" Size="1" SourceColumn="xType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xModule_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xModule_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xGenType_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xGenType_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xConditionMaintenance" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xConditionMaintenance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xFeature" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xFeature" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xAcceptCriteria" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xAcceptCriteria" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xControlTools" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xControlTools" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xSupplier_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xSupplier_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@StandardINV" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xStandardINV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xSerial" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="xSerial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.SlMaterial</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="char" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@xType" Precision="0" ProviderType="Char" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xGenType_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.UdMaterial</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xMaterialName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="xMaterialName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="char" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@xType" Precision="0" ProviderType="Char" Scale="0" Size="1" SourceColumn="xType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@x_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="x_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xModule_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xModule_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xGenType_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xGenType_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xConditionMaintenance" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xConditionMaintenance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xFeature" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xFeature" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xAcceptCriteria" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xAcceptCriteria" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xControlTools" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="xControlTools" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xSupplier_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xSupplier_" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@StandardINV" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumn="xStandardINV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@xSerial" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="xSerial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xMaterialName" DataSetColumn="xMaterialName" />
+              <Mapping SourceColumn="xModule_" DataSetColumn="xModule_" />
+              <Mapping SourceColumn="Module" DataSetColumn="Module" />
+              <Mapping SourceColumn="xType" DataSetColumn="xType" />
+              <Mapping SourceColumn="xGenType_" DataSetColumn="xGenType_" />
+              <Mapping SourceColumn="xConditionMaintenance" DataSetColumn="xConditionMaintenance" />
+              <Mapping SourceColumn="xFeature" DataSetColumn="xFeature" />
+              <Mapping SourceColumn="xAcceptCriteria" DataSetColumn="xAcceptCriteria" />
+              <Mapping SourceColumn="xControlTools" DataSetColumn="xControlTools" />
+              <Mapping SourceColumn="xStandardINV" DataSetColumn="xStandardINV" />
+              <Mapping SourceColumn="xSupplier_" DataSetColumn="xSupplier_" />
+              <Mapping SourceColumn="xSupplier" DataSetColumn="xSupplier" />
+              <Mapping SourceColumn="xDateEdit" DataSetColumn="xDateEdit" />
+              <Mapping SourceColumn="xSerial" DataSetColumn="xSerial" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SelectMaterialTypeTableAdapter" GeneratorDataComponentClassName="SelectMaterialTypeTableAdapter" Name="SelectMaterialType" UserDataComponentName="SelectMaterialTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.SelectMaterialType" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.SelectMaterialType</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xGenType1_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@xGenType2_" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@AllMaterial" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="x_" DataSetColumn="x_" />
+              <Mapping SourceColumn="xMaterialName" DataSetColumn="xMaterialName" />
+              <Mapping SourceColumn="xOffsetCode" DataSetColumn="xOffsetCode" />
+              <Mapping SourceColumn="xPlaceUse" DataSetColumn="xPlaceUse" />
+              <Mapping SourceColumn="xIsscarb" DataSetColumn="xIsscarb" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources>
+          <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.SyncMaterial" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="SyncMaterial" MethodsParameterType="CLR" Modifier="Public" Name="SyncMaterial" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="SyncMaterial">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.SyncMaterial</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="PayazobConnectionString (Settings)" DbObjectName="Payazob.dbo.SyncScarb" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="SyncScarb" MethodsParameterType="CLR" Modifier="Public" Name="SyncScarb" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="SyncScarb">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.SyncScarb</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Material" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Material" msprop:Generator_UserDSName="DataSet_Material">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mMaterial" msprop:Generator_TableClassName="mMaterialDataTable" msprop:Generator_TableVarName="tablemMaterial" msprop:Generator_TablePropName="mMaterial" msprop:Generator_RowDeletingName="mMaterialRowDeleting" msprop:Generator_RowChangingName="mMaterialRowChanging" msprop:Generator_RowEvHandlerName="mMaterialRowChangeEventHandler" msprop:Generator_RowDeletedName="mMaterialRowDeleted" msprop:Generator_UserTableName="mMaterial" msprop:Generator_RowChangedName="mMaterialRowChanged" msprop:Generator_RowEvArgName="mMaterialRowChangeEvent" msprop:Generator_RowClassName="mMaterialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xMaterialName" msprop:Generator_ColumnVarNameInTable="columnxMaterialName" msprop:Generator_ColumnPropNameInRow="xMaterialName" msprop:Generator_ColumnPropNameInTable="xMaterialNameColumn" msprop:Generator_UserColumnName="xMaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SlMaterialAndScarb" msprop:Generator_TableClassName="SlMaterialAndScarbDataTable" msprop:Generator_TableVarName="tableSlMaterialAndScarb" msprop:Generator_TablePropName="SlMaterialAndScarb" msprop:Generator_RowDeletingName="SlMaterialAndScarbRowDeleting" msprop:Generator_RowChangingName="SlMaterialAndScarbRowChanging" msprop:Generator_RowEvHandlerName="SlMaterialAndScarbRowChangeEventHandler" msprop:Generator_RowDeletedName="SlMaterialAndScarbRowDeleted" msprop:Generator_UserTableName="SlMaterialAndScarb" msprop:Generator_RowChangedName="SlMaterialAndScarbRowChanged" msprop:Generator_RowEvArgName="SlMaterialAndScarbRowChangeEvent" msprop:Generator_RowClassName="SlMaterialAndScarbRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xMaterialName" msprop:Generator_ColumnVarNameInTable="columnxMaterialName" msprop:Generator_ColumnPropNameInRow="xMaterialName" msprop:Generator_ColumnPropNameInTable="xMaterialNameColumn" msprop:Generator_UserColumnName="xMaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xGenType_" msprop:Generator_ColumnVarNameInTable="columnxGenType_" msprop:Generator_ColumnPropNameInRow="xGenType_" msprop:Generator_ColumnPropNameInTable="xGenType_Column" msprop:Generator_UserColumnName="xGenType_" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SlModule" msprop:Generator_TableClassName="SlModuleDataTable" msprop:Generator_TableVarName="tableSlModule" msprop:Generator_TablePropName="SlModule" msprop:Generator_RowDeletingName="SlModuleRowDeleting" msprop:Generator_RowChangingName="SlModuleRowChanging" msprop:Generator_RowEvHandlerName="SlModuleRowChangeEventHandler" msprop:Generator_RowDeletedName="SlModuleRowDeleted" msprop:Generator_UserTableName="SlModule" msprop:Generator_RowChangedName="SlModuleRowChanged" msprop:Generator_RowEvArgName="SlModuleRowChangeEvent" msprop:Generator_RowClassName="SlModuleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xModuleName" msprop:Generator_ColumnVarNameInTable="columnxModuleName" msprop:Generator_ColumnPropNameInRow="xModuleName" msprop:Generator_ColumnPropNameInTable="xModuleNameColumn" msprop:Generator_UserColumnName="xModuleName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mMaterialForLocation" msprop:Generator_TableClassName="mMaterialForLocationDataTable" msprop:Generator_TableVarName="tablemMaterialForLocation" msprop:Generator_TablePropName="mMaterialForLocation" msprop:Generator_RowDeletingName="mMaterialForLocationRowDeleting" msprop:Generator_RowChangingName="mMaterialForLocationRowChanging" msprop:Generator_RowEvHandlerName="mMaterialForLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="mMaterialForLocationRowDeleted" msprop:Generator_UserTableName="mMaterialForLocation" msprop:Generator_RowChangedName="mMaterialForLocationRowChanged" msprop:Generator_RowEvArgName="mMaterialForLocationRowChangeEvent" msprop:Generator_RowClassName="mMaterialForLocationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xMaterialName" msprop:Generator_ColumnVarNameInTable="columnxMaterialName" msprop:Generator_ColumnPropNameInRow="xMaterialName" msprop:Generator_ColumnPropNameInTable="xMaterialNameColumn" msprop:Generator_UserColumnName="xMaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SlMaterial" msprop:Generator_TableClassName="SlMaterialDataTable" msprop:Generator_TableVarName="tableSlMaterial" msprop:Generator_RowChangedName="SlMaterialRowChanged" msprop:Generator_TablePropName="SlMaterial" msprop:Generator_RowDeletingName="SlMaterialRowDeleting" msprop:Generator_RowChangingName="SlMaterialRowChanging" msprop:Generator_RowEvHandlerName="SlMaterialRowChangeEventHandler" msprop:Generator_RowDeletedName="SlMaterialRowDeleted" msprop:Generator_RowClassName="SlMaterialRow" msprop:Generator_UserTableName="SlMaterial" msprop:Generator_RowEvArgName="SlMaterialRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xMaterialName" msprop:Generator_ColumnVarNameInTable="columnxMaterialName" msprop:Generator_ColumnPropNameInRow="xMaterialName" msprop:Generator_ColumnPropNameInTable="xMaterialNameColumn" msprop:Generator_UserColumnName="xMaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xModule_" msprop:Generator_ColumnVarNameInTable="columnxModule_" msprop:Generator_ColumnPropNameInRow="xModule_" msprop:Generator_ColumnPropNameInTable="xModule_Column" msprop:Generator_UserColumnName="xModule_" type="xs:int" minOccurs="0" />
+              <xs:element name="Module" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnModule" msprop:Generator_ColumnPropNameInRow="Module" msprop:Generator_ColumnPropNameInTable="ModuleColumn" msprop:Generator_UserColumnName="Module" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xType" msprop:Generator_ColumnVarNameInTable="columnxType" msprop:Generator_ColumnPropNameInRow="xType" msprop:Generator_ColumnPropNameInTable="xTypeColumn" msprop:Generator_UserColumnName="xType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xGenType_" msprop:Generator_ColumnVarNameInTable="columnxGenType_" msprop:Generator_ColumnPropNameInRow="xGenType_" msprop:Generator_ColumnPropNameInTable="xGenType_Column" msprop:Generator_UserColumnName="xGenType_" type="xs:int" minOccurs="0" />
+              <xs:element name="xConditionMaintenance" msprop:Generator_ColumnVarNameInTable="columnxConditionMaintenance" msprop:Generator_ColumnPropNameInRow="xConditionMaintenance" msprop:Generator_ColumnPropNameInTable="xConditionMaintenanceColumn" msprop:Generator_UserColumnName="xConditionMaintenance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xFeature" msprop:Generator_ColumnVarNameInTable="columnxFeature" msprop:Generator_ColumnPropNameInRow="xFeature" msprop:Generator_ColumnPropNameInTable="xFeatureColumn" msprop:Generator_UserColumnName="xFeature" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xAcceptCriteria" msprop:Generator_ColumnVarNameInTable="columnxAcceptCriteria" msprop:Generator_ColumnPropNameInRow="xAcceptCriteria" msprop:Generator_ColumnPropNameInTable="xAcceptCriteriaColumn" msprop:Generator_UserColumnName="xAcceptCriteria" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xControlTools" msprop:Generator_ColumnVarNameInTable="columnxControlTools" msprop:Generator_ColumnPropNameInRow="xControlTools" msprop:Generator_ColumnPropNameInTable="xControlToolsColumn" msprop:Generator_UserColumnName="xControlTools" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xStandardINV" msprop:Generator_ColumnVarNameInTable="columnxStandardINV" msprop:Generator_ColumnPropNameInRow="xStandardINV" msprop:Generator_ColumnPropNameInTable="xStandardINVColumn" msprop:Generator_UserColumnName="xStandardINV" type="xs:int" minOccurs="0" />
+              <xs:element name="xSupplier_" msprop:Generator_ColumnVarNameInTable="columnxSupplier_" msprop:Generator_ColumnPropNameInRow="xSupplier_" msprop:Generator_ColumnPropNameInTable="xSupplier_Column" msprop:Generator_UserColumnName="xSupplier_" type="xs:int" minOccurs="0" />
+              <xs:element name="xSupplier" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnxSupplier" msprop:Generator_ColumnPropNameInRow="xSupplier" msprop:Generator_ColumnPropNameInTable="xSupplierColumn" msprop:Generator_UserColumnName="xSupplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xDateEdit" msprop:Generator_ColumnVarNameInTable="columnxDateEdit" msprop:Generator_ColumnPropNameInRow="xDateEdit" msprop:Generator_ColumnPropNameInTable="xDateEditColumn" msprop:Generator_UserColumnName="xDateEdit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xSerial" msprop:Generator_ColumnVarNameInTable="columnxSerial" msprop:Generator_ColumnPropNameInRow="xSerial" msprop:Generator_ColumnPropNameInTable="xSerialColumn" msprop:Generator_UserColumnName="xSerial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SelectMaterialType" msprop:Generator_TableClassName="SelectMaterialTypeDataTable" msprop:Generator_TableVarName="tableSelectMaterialType" msprop:Generator_TablePropName="SelectMaterialType" msprop:Generator_RowDeletingName="SelectMaterialTypeRowDeleting" msprop:Generator_RowChangingName="SelectMaterialTypeRowChanging" msprop:Generator_RowEvHandlerName="SelectMaterialTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="SelectMaterialTypeRowDeleted" msprop:Generator_UserTableName="SelectMaterialType" msprop:Generator_RowChangedName="SelectMaterialTypeRowChanged" msprop:Generator_RowEvArgName="SelectMaterialTypeRowChangeEvent" msprop:Generator_RowClassName="SelectMaterialTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x_" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnx_" msprop:Generator_ColumnPropNameInRow="x_" msprop:Generator_ColumnPropNameInTable="x_Column" msprop:Generator_UserColumnName="x_" type="xs:int" />
+              <xs:element name="xMaterialName" msprop:Generator_ColumnVarNameInTable="columnxMaterialName" msprop:Generator_ColumnPropNameInRow="xMaterialName" msprop:Generator_ColumnPropNameInTable="xMaterialNameColumn" msprop:Generator_UserColumnName="xMaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xOffsetCode" msprop:Generator_ColumnVarNameInTable="columnxOffsetCode" msprop:Generator_ColumnPropNameInRow="xOffsetCode" msprop:Generator_ColumnPropNameInTable="xOffsetCodeColumn" msprop:Generator_UserColumnName="xOffsetCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xPlaceUse" msprop:Generator_ColumnVarNameInTable="columnxPlaceUse" msprop:Generator_ColumnPropNameInRow="xPlaceUse" msprop:Generator_ColumnPropNameInTable="xPlaceUseColumn" msprop:Generator_UserColumnName="xPlaceUse" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xIsscarb" msprop:Generator_ColumnVarNameInTable="columnxIsscarb" msprop:Generator_ColumnPropNameInRow="xIsscarb" msprop:Generator_ColumnPropNameInTable="xIsscarbColumn" msprop:Generator_UserColumnName="xIsscarb" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mMaterial" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+    <xs:unique name="SlMaterialAndScarb_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SlMaterialAndScarb" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+    <xs:unique name="SlModule_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SlModule" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+    <xs:unique name="mMaterialForLocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mMaterialForLocation" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+    <xs:unique name="SlMaterial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SlMaterial" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+    <xs:unique name="SelectMaterialType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SelectMaterialType" />
+      <xs:field xpath="mstns:x_" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,2188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0274000-1FF3-423E-B3E7-B76A5905BB4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccidentsMinor\DataSet_AccidentsMinor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_AccidentsMinor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Aid\DataSet_Aid.cs">
+      <DependentUpon>DataSet_Aid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Aid\DataSet_Aid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Aid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Aid\DataSet_SectionAidPerdicUsage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SectionAidPerdicUsage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyzeFurnace\DataSet_AnalyzeFurnace.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_AnalyzeFurnace.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceBeginingPiecesTurning\DataSet_BalanceBeginingPiecesTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BalanceBeginingPiecesTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceBeginningMaterial\DataSet_BalanceBeginningMaterial.cs">
+      <DependentUpon>DataSet_BalanceBeginningMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceBeginningMaterial\DataSet_BalanceBeginningMaterial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BalanceBeginningMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceBeginningPieces\DataSet_BalanceBeginning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BalanceBeginning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BossReprot\DataSet_BossReprot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BossReprot.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetPlan\DataSet_BudgetPlan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BudgetPlan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ConfirmMoldCompressNumber\DataSet_ConfirmMoldCompressNumber.cs">
+      <DependentUpon>DataSet_ConfirmMoldCompressNumber.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmMoldCompressNumber\DataSet_ConfirmMoldCompressNumber.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ConfirmMoldCompressNumber.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPrj\DataSet_ControlPrj.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ControlPrj.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CorrectiveAction\DataSet_CorrectiveAction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_CorrectiveAction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csConnection.cs" />
+    <Compile Include="csConnectionTest.cs" />
+    <Compile Include="cs_CreateDataSet.cs" />
+    <Compile Include="CustomerReturn\DataSet_CustomerReturn.cs">
+      <DependentUpon>DataSet_CustomerReturn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReturn\DataSet_CustomerReturn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_CustomerReturn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReturn\DataSet_CustomerReturnImage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_CustomerReturnImage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReturn\DataSet_CustomerReturnTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_CustomerReturnTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Authentication.cs">
+      <DependentUpon>DataSet_Authentication.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Authentication.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Authentication.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Compony.cs">
+      <DependentUpon>DataSet_Compony.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Compony.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Compony.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Correspondence.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Correspondence.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Defect.cs">
+      <DependentUpon>DataSet_Defect.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Defect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Defect.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Element.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Element.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Event.cs">
+      <DependentUpon>DataSet_Event.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Event.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Event.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Foundry.cs">
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Foundry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Image.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Image.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Login.cs">
+      <DependentUpon>DataSet_Login.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Login.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Material.cs">
+      <DependentUpon>DataSet_Material.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Material.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Material.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Phone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Phone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Piece.cs">
+      <DependentUpon>DataSet_Piece.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Piece.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Piece.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Procurement.cs">
+      <DependentUpon>DataSet_Procurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Procurement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Procurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_QualityControl.cs">
+      <DependentUpon>DataSet_QualityControl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_QualityControl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_QualityControl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_RegistringGroup.cs">
+      <DependentUpon>DataSet_RegistringGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_RegistringGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RegistringGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ReturnCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ReturnCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Sand.cs">
+      <DependentUpon>DataSet_Sand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Sand.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Sand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Section.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ShamsiDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ShamsiDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Shift.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Shift.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DayHourPlanning\DataSet_DayHourPlannig.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DayHourPlannig.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Defect\DataSet_DefectList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DefectList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Defect\DataSet_ProductInspection.cs">
+      <DependentUpon>DataSet_ProductInspection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Defect\DataSet_ProductInspection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProductInspection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryWareHose\DataSet_DeliveryWareHouse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DeliveryWareHouse.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DestructionReport\DataClasses_DestractionReport.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_DestractionReport.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DestructionReport\DataSet_DestructionMaterialTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DestructionMaterialTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DestructionReport\DataSet_DestructionPiecesTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DestructionPiecesTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermit\DataSet_ExitPermit.cs">
+      <DependentUpon>DataSet_ExitPermit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermit\DataSet_ExitPermit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ExitPermit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FIFO\DataSet_InvMaterialInput.cs">
+      <DependentUpon>DataSet_InvMaterialInput.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FIFO\DataSet_InvMaterialInput.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InvMaterialInput.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Foundry\DataSet_Foundry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GageList\DataSet_Gagelist.cs">
+      <DependentUpon>DataSet_Gagelist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GageList\DataSet_Gagelist.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Gagelist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GenCntValue\DataSet_GenCntValue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_GenCntValue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GenGroup\DataSet_GenGroup.cs">
+      <DependentUpon>DataSet_GenGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GenGroup\DataSet_GenGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_GenGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hygiene\DataSet_Hygiene.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Hygiene.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_Inventory.cs">
+      <DependentUpon>DataSet_Inventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_Inventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Inventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_InventoryMachining.cs">
+      <DependentUpon>DataSet_InventoryMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_InventoryMachining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InventoryMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_InventoryScrab.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InventoryScrab.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_InventoryTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InventoryTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\DataSet_SendProductTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SendProductTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\DataSet_KPI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_KPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\DataSet_Stock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Stock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MachineSettingChange\DataSet_MachineSettingChange.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MachineSettingChange.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Machine\DataSet_Machine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Machine.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerReport\DataSet_InventoryPiecesForManager.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InventoryPiecesForManager.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerReport\DataSet_ManagerReport.cs">
+      <DependentUpon>DataSet_ManagerReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerReport\DataSet_ManagerReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ManagerReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerReport\DataSet_PiecesProuductForManager_R.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PiecesProuductForManager_R.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Marquee\DataSet_Marquee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Marquee.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialLocation\DataSet_MaterialLocation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MaterialLocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Message\DataSet_Message.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Message.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSet_Model.cs">
+      <DependentUpon>DataSet_Model.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataSet_Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Model.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldingDownTime\DataSet_MoldingDownTime.cs">
+      <DependentUpon>DataSet_MoldingDownTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldingDownTime\DataSet_MoldingDownTime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MoldingDownTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldingDownTime\DataSet_MoldingDownTime_R.cs">
+      <DependentUpon>DataSet_MoldingDownTime_R.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldingDownTime\DataSet_MoldingDownTime_R.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MoldingDownTime_R.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Mold\DataSet_Mold.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Mold.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_BalanceBeginningMuscle.cs">
+      <DependentUpon>DataSet_BalanceBeginningMuscle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_BalanceBeginningMuscle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_BalanceBeginningMuscle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_MuscleINV.cs">
+      <DependentUpon>DataSet_MuscleINV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_MuscleINV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MuscleINV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_MuscleProduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MuscleProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuscleProduct\DataSet_MuscleSend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MuscleSend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NesPrcSPC\DataSet_NesPrcSpc.cs">
+      <DependentUpon>DataSet_NesPrcSpc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NesPrcSPC\DataSet_NesPrcSpc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_NesPrcSpc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NonConforming\DataSet_NonConforming.cs">
+      <DependentUpon>DataSet_NonConforming.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NonConforming\DataSet_NonConforming.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_NonConforming.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Object\DataSet_Object.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Object.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OverTime\DataSet_OverTime.cs">
+      <DependentUpon>DataSet_OverTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OverTime\DataSet_OverTime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_OverTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Person\DataSet_PersonInfo.cs">
+      <DependentUpon>DataSet_PersonInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Person\DataSet_PersonInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PersonInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Person\DataSet_PersonIO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PersonIO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PiecesCorrectiveMachining\PiecesCorrectiveMachining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PiecesCorrectiveMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\DataSet_Pieces.cs">
+      <DependentUpon>DataSet_Pieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\DataSet_Pieces.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Pieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Poem\DataSet_Poem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Poem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialSample.cs">
+      <DependentUpon>DataSet_ProcurmentMaterialSample.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialSample.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentMaterialSample.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialSampleReceipt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentMaterialSampleReceipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentMaterialTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialToMachining.cs">
+      <DependentUpon>DataSet_ProcurmentMaterialToMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialToMachining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentMaterialToMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentMaterialTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentMaterialTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentSalesProduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentSalesProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DataSet_ProcurmentScarbTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProcurmentScarbTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductOperation\DataSet_ProductOperation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProductOperation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPlanning\DataSet_ProductPlanning.cs">
+      <DependentUpon>DataSet_ProductPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPlanning\DataSet_ProductPlanning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProductPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductRepairRequest\DataSet_ProductRepairRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProductRepairRequest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl\DataSet_PruductInspection.cs">
+      <DependentUpon>DataSet_PruductInspection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl\DataSet_PruductInspection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PruductInspection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl\DataSet_PruductInspectionMachining_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PruductInspectionMachining_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl\DataSet_PruductInspection_Chart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PruductInspection_Chart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegEntExit\DataSet_RegEntExit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RegEntExit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Register\DataSet_User.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_User.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reproduct\DataSet_Reproduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Reproduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RequestITService\DataSet_RequestItService.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RequestItService.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RequestObject\DataSet_RequestObject.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_RequestObject.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalePlan\DataSet_SalePlan.cs">
+      <DependentUpon>DataSet_SalePlan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalePlan\DataSet_SalePlan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SalePlan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalePlan\DataSet_SalePlanLicense.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SalePlanLicense.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalePlan\DataSet_SalePlanTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SalePlanTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SandDailyReport.cs">
+      <DependentUpon>DataSet_SandDailyReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SandDailyReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SandDailyReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SandMaterialUsage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SandMaterialUsage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SandWeeklyTest.cs">
+      <DependentUpon>DataSet_SandWeeklyTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SandWeeklyTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SandWeeklyTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SPC.cs">
+      <DependentUpon>DataSet_SPC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sand\DataSet_SPC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SPC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScarbUsage\DataSet_ScarbUsage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ScarbUsage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\DataSet_Schedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Schedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Section\DataSet_Section.cs">
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Section\DataSet_Section.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SendProductInspectionMachining\DataSet_SendProductInspectionMachining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SendProductInspectionMachining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SendProductToTurning\DataSet_SendProductToTurning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SendProductToTurning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShotBlasting\DataSet_ShotBlasting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ShotBlasting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="State\DataSet_State.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_State.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Status\DataSet_Status.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Status.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeLine\DataSet_TimeLineMachine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_TimeLineMachine.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DataSet_Tools.cs">
+      <DependentUpon>DataSet_Tools.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DataSet_Tools.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Tools.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinKart\DataSet_PerFoodStatus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PerFoodStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinKart\DataSet_PerInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_PerInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinKart\DataSet_Winkart.cs">
+      <DependentUpon>DataSet_Winkart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinKart\DataSet_Winkart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Winkart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkHour\DataSet_WorkHour.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_WorkHour.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AccidentsMinor\DataSet_AccidentsMinor.xsc">
+      <DependentUpon>DataSet_AccidentsMinor.xsd</DependentUpon>
+    </None>
+    <None Include="AccidentsMinor\DataSet_AccidentsMinor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_AccidentsMinor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AccidentsMinor\DataSet_AccidentsMinor.xss">
+      <DependentUpon>DataSet_AccidentsMinor.xsd</DependentUpon>
+    </None>
+    <None Include="Aid\DataSet_Aid.xsc">
+      <DependentUpon>DataSet_Aid.xsd</DependentUpon>
+    </None>
+    <None Include="Aid\DataSet_Aid.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Aid.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Aid\DataSet_Aid.xss">
+      <DependentUpon>DataSet_Aid.xsd</DependentUpon>
+    </None>
+    <None Include="Aid\DataSet_SectionAidPerdicUsage.xsc">
+      <DependentUpon>DataSet_SectionAidPerdicUsage.xsd</DependentUpon>
+    </None>
+    <None Include="Aid\DataSet_SectionAidPerdicUsage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SectionAidPerdicUsage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Aid\DataSet_SectionAidPerdicUsage.xss">
+      <DependentUpon>DataSet_SectionAidPerdicUsage.xsd</DependentUpon>
+    </None>
+    <None Include="AnalyzeFurnace\DataSet_AnalyzeFurnace.xsc">
+      <DependentUpon>DataSet_AnalyzeFurnace.xsd</DependentUpon>
+    </None>
+    <None Include="AnalyzeFurnace\DataSet_AnalyzeFurnace.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_AnalyzeFurnace.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AnalyzeFurnace\DataSet_AnalyzeFurnace.xss">
+      <DependentUpon>DataSet_AnalyzeFurnace.xsd</DependentUpon>
+    </None>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BalanceBeginingPiecesTurning\DataSet_BalanceBeginingPiecesTurning.xsc">
+      <DependentUpon>DataSet_BalanceBeginingPiecesTurning.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceBeginingPiecesTurning\DataSet_BalanceBeginingPiecesTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BalanceBeginingPiecesTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BalanceBeginingPiecesTurning\DataSet_BalanceBeginingPiecesTurning.xss">
+      <DependentUpon>DataSet_BalanceBeginingPiecesTurning.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceBeginningMaterial\DataSet_BalanceBeginningMaterial.xsc">
+      <DependentUpon>DataSet_BalanceBeginningMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceBeginningMaterial\DataSet_BalanceBeginningMaterial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BalanceBeginningMaterial.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BalanceBeginningMaterial\DataSet_BalanceBeginningMaterial.xss">
+      <DependentUpon>DataSet_BalanceBeginningMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceBeginningPieces\DataSet_BalanceBeginning.xsc">
+      <DependentUpon>DataSet_BalanceBeginning.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceBeginningPieces\DataSet_BalanceBeginning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BalanceBeginning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BalanceBeginningPieces\DataSet_BalanceBeginning.xss">
+      <DependentUpon>DataSet_BalanceBeginning.xsd</DependentUpon>
+    </None>
+    <None Include="BossReprot\DataSet_BossReprot.xsc">
+      <DependentUpon>DataSet_BossReprot.xsd</DependentUpon>
+    </None>
+    <None Include="BossReprot\DataSet_BossReprot.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BossReprot.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BossReprot\DataSet_BossReprot.xss">
+      <DependentUpon>DataSet_BossReprot.xsd</DependentUpon>
+    </None>
+    <None Include="BudgetPlan\DataSet_BudgetPlan.xsc">
+      <DependentUpon>DataSet_BudgetPlan.xsd</DependentUpon>
+    </None>
+    <None Include="BudgetPlan\DataSet_BudgetPlan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BudgetPlan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BudgetPlan\DataSet_BudgetPlan.xss">
+      <DependentUpon>DataSet_BudgetPlan.xsd</DependentUpon>
+    </None>
+    <None Include="ConfirmMoldCompressNumber\DataSet_ConfirmMoldCompressNumber.xsc">
+      <DependentUpon>DataSet_ConfirmMoldCompressNumber.xsd</DependentUpon>
+    </None>
+    <None Include="ConfirmMoldCompressNumber\DataSet_ConfirmMoldCompressNumber.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ConfirmMoldCompressNumber.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConfirmMoldCompressNumber\DataSet_ConfirmMoldCompressNumber.xss">
+      <DependentUpon>DataSet_ConfirmMoldCompressNumber.xsd</DependentUpon>
+    </None>
+    <None Include="ControlPrj\DataSet_ControlPrj.xsc">
+      <DependentUpon>DataSet_ControlPrj.xsd</DependentUpon>
+    </None>
+    <None Include="ControlPrj\DataSet_ControlPrj.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ControlPrj.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ControlPrj\DataSet_ControlPrj.xss">
+      <DependentUpon>DataSet_ControlPrj.xsd</DependentUpon>
+    </None>
+    <None Include="CorrectiveAction\DataSet_CorrectiveAction.xsc">
+      <DependentUpon>DataSet_CorrectiveAction.xsd</DependentUpon>
+    </None>
+    <None Include="CorrectiveAction\DataSet_CorrectiveAction.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_CorrectiveAction.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CorrectiveAction\DataSet_CorrectiveAction.xss">
+      <DependentUpon>DataSet_CorrectiveAction.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturn.xsc">
+      <DependentUpon>DataSet_CustomerReturn.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturn.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_CustomerReturn.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturn.xss">
+      <DependentUpon>DataSet_CustomerReturn.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnImage.xsc">
+      <DependentUpon>DataSet_CustomerReturnImage.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnImage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_CustomerReturnImage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnImage.xss">
+      <DependentUpon>DataSet_CustomerReturnImage.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnTurning.xsc">
+      <DependentUpon>DataSet_CustomerReturnTurning.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_CustomerReturnTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerReturn\DataSet_CustomerReturnTurning.xss">
+      <DependentUpon>DataSet_CustomerReturnTurning.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Authentication.xsc">
+      <DependentUpon>DataSet_Authentication.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Authentication.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Authentication.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Authentication.xss">
+      <DependentUpon>DataSet_Authentication.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Compony.xsc">
+      <DependentUpon>DataSet_Compony.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Compony.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Compony.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Compony.xss">
+      <DependentUpon>DataSet_Compony.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Correspondence.xsc">
+      <DependentUpon>DataSet_Correspondence.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Correspondence.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Correspondence.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Correspondence.xss">
+      <DependentUpon>DataSet_Correspondence.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Defect.xsc">
+      <DependentUpon>DataSet_Defect.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Defect.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Defect.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Defect.xss">
+      <DependentUpon>DataSet_Defect.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Element.xsc">
+      <DependentUpon>DataSet_Element.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Element.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Element.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Element.xss">
+      <DependentUpon>DataSet_Element.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Event.xsc">
+      <DependentUpon>DataSet_Event.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Event.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Event.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Event.xss">
+      <DependentUpon>DataSet_Event.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Foundry.xsc">
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Foundry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Foundry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Foundry.xss">
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Image.xsc">
+      <DependentUpon>DataSet_Image.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Image.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Image.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Image.xss">
+      <DependentUpon>DataSet_Image.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Login.xsc">
+      <DependentUpon>DataSet_Login.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Login.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Login.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Login.xss">
+      <DependentUpon>DataSet_Login.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Material.xsc">
+      <DependentUpon>DataSet_Material.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Material.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Material.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Material.xss">
+      <DependentUpon>DataSet_Material.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Phone.xsc">
+      <DependentUpon>DataSet_Phone.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Phone.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Phone.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Phone.xss">
+      <DependentUpon>DataSet_Phone.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Piece.xsc">
+      <DependentUpon>DataSet_Piece.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Piece.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Piece.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Piece.xss">
+      <DependentUpon>DataSet_Piece.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Procurement.xsc">
+      <DependentUpon>DataSet_Procurement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Procurement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Procurement.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Procurement.xss">
+      <DependentUpon>DataSet_Procurement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_QualityControl.xsc">
+      <DependentUpon>DataSet_QualityControl.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_QualityControl.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_QualityControl.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_QualityControl.xss">
+      <DependentUpon>DataSet_QualityControl.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RegistringGroup.xsc">
+      <DependentUpon>DataSet_RegistringGroup.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_RegistringGroup.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RegistringGroup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_RegistringGroup.xss">
+      <DependentUpon>DataSet_RegistringGroup.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ReturnCustomer.xsc">
+      <DependentUpon>DataSet_ReturnCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ReturnCustomer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ReturnCustomer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_ReturnCustomer.xss">
+      <DependentUpon>DataSet_ReturnCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Sand.xsc">
+      <DependentUpon>DataSet_Sand.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Sand.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Sand.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Sand.xss">
+      <DependentUpon>DataSet_Sand.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Section.xsc">
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Section.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Section.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Section.xss">
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ShamsiDate.xsc">
+      <DependentUpon>DataSet_ShamsiDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ShamsiDate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ShamsiDate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_ShamsiDate.xss">
+      <DependentUpon>DataSet_ShamsiDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Shift.xsc">
+      <DependentUpon>DataSet_Shift.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Shift.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Shift.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Shift.xss">
+      <DependentUpon>DataSet_Shift.xsd</DependentUpon>
+    </None>
+    <None Include="DayHourPlanning\DataSet_DayHourPlannig.xsc">
+      <DependentUpon>DataSet_DayHourPlannig.xsd</DependentUpon>
+    </None>
+    <None Include="DayHourPlanning\DataSet_DayHourPlannig.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DayHourPlannig.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DayHourPlanning\DataSet_DayHourPlannig.xss">
+      <DependentUpon>DataSet_DayHourPlannig.xsd</DependentUpon>
+    </None>
+    <None Include="Defect\DataSet_DefectList.xsc">
+      <DependentUpon>DataSet_DefectList.xsd</DependentUpon>
+    </None>
+    <None Include="Defect\DataSet_DefectList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DefectList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Defect\DataSet_DefectList.xss">
+      <DependentUpon>DataSet_DefectList.xsd</DependentUpon>
+    </None>
+    <None Include="Defect\DataSet_ProductInspection.xsc">
+      <DependentUpon>DataSet_ProductInspection.xsd</DependentUpon>
+    </None>
+    <None Include="Defect\DataSet_ProductInspection.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProductInspection.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Defect\DataSet_ProductInspection.xss">
+      <DependentUpon>DataSet_ProductInspection.xsd</DependentUpon>
+    </None>
+    <None Include="DeliveryWareHose\DataSet_DeliveryWareHouse.xsc">
+      <DependentUpon>DataSet_DeliveryWareHouse.xsd</DependentUpon>
+    </None>
+    <None Include="DeliveryWareHose\DataSet_DeliveryWareHouse.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DeliveryWareHouse.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DeliveryWareHose\DataSet_DeliveryWareHouse.xss">
+      <DependentUpon>DataSet_DeliveryWareHouse.xsd</DependentUpon>
+    </None>
+    <None Include="DestructionReport\DataClasses_DestractionReport.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_DestractionReport.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionMaterialTurning.xsc">
+      <DependentUpon>DataSet_DestructionMaterialTurning.xsd</DependentUpon>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionMaterialTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DestructionMaterialTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionMaterialTurning.xss">
+      <DependentUpon>DataSet_DestructionMaterialTurning.xsd</DependentUpon>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionPiecesTurning.xsc">
+      <DependentUpon>DataSet_DestructionPiecesTurning.xsd</DependentUpon>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionPiecesTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DestructionPiecesTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DestructionReport\DataSet_DestructionPiecesTurning.xss">
+      <DependentUpon>DataSet_DestructionPiecesTurning.xsd</DependentUpon>
+    </None>
+    <None Include="ExitPermit\DataSet_ExitPermit.xsc">
+      <DependentUpon>DataSet_ExitPermit.xsd</DependentUpon>
+    </None>
+    <None Include="ExitPermit\DataSet_ExitPermit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ExitPermit.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ExitPermit\DataSet_ExitPermit.xss">
+      <DependentUpon>DataSet_ExitPermit.xsd</DependentUpon>
+    </None>
+    <None Include="FIFO\DataSet_InvMaterialInput.xsc">
+      <DependentUpon>DataSet_InvMaterialInput.xsd</DependentUpon>
+    </None>
+    <None Include="FIFO\DataSet_InvMaterialInput.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InvMaterialInput.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FIFO\DataSet_InvMaterialInput.xss">
+      <DependentUpon>DataSet_InvMaterialInput.xsd</DependentUpon>
+    </None>
+    <None Include="Foundry\DataSet_Foundry.xsc">
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </None>
+    <None Include="Foundry\DataSet_Foundry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Foundry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Foundry\DataSet_Foundry.xss">
+      <DependentUpon>DataSet_Foundry.xsd</DependentUpon>
+    </None>
+    <None Include="GageList\DataSet_Gagelist.xsc">
+      <DependentUpon>DataSet_Gagelist.xsd</DependentUpon>
+    </None>
+    <None Include="GageList\DataSet_Gagelist.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Gagelist.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GageList\DataSet_Gagelist.xss">
+      <DependentUpon>DataSet_Gagelist.xsd</DependentUpon>
+    </None>
+    <None Include="GenCntValue\DataSet_GenCntValue.xsc">
+      <DependentUpon>DataSet_GenCntValue.xsd</DependentUpon>
+    </None>
+    <None Include="GenCntValue\DataSet_GenCntValue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_GenCntValue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GenCntValue\DataSet_GenCntValue.xss">
+      <DependentUpon>DataSet_GenCntValue.xsd</DependentUpon>
+    </None>
+    <None Include="GenGroup\DataSet_GenGroup.xsc">
+      <DependentUpon>DataSet_GenGroup.xsd</DependentUpon>
+    </None>
+    <None Include="GenGroup\DataSet_GenGroup.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_GenGroup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GenGroup\DataSet_GenGroup.xss">
+      <DependentUpon>DataSet_GenGroup.xsd</DependentUpon>
+    </None>
+    <None Include="Hygiene\DataSet_Hygiene.xsc">
+      <DependentUpon>DataSet_Hygiene.xsd</DependentUpon>
+    </None>
+    <None Include="Hygiene\DataSet_Hygiene.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Hygiene.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Hygiene\DataSet_Hygiene.xss">
+      <DependentUpon>DataSet_Hygiene.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_Inventory.xsc">
+      <DependentUpon>DataSet_Inventory.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_Inventory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Inventory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inventory\DataSet_Inventory.xss">
+      <DependentUpon>DataSet_Inventory.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryMachining.xsc">
+      <DependentUpon>DataSet_InventoryMachining.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryMachining.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InventoryMachining.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inventory\DataSet_InventoryMachining.xss">
+      <DependentUpon>DataSet_InventoryMachining.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryScrab.xsc">
+      <DependentUpon>DataSet_InventoryScrab.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryScrab.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InventoryScrab.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inventory\DataSet_InventoryScrab.xss">
+      <DependentUpon>DataSet_InventoryScrab.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryTurning.xsc">
+      <DependentUpon>DataSet_InventoryTurning.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_InventoryTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InventoryTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inventory\DataSet_InventoryTurning.xss">
+      <DependentUpon>DataSet_InventoryTurning.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_SendProductTurning.xsc">
+      <DependentUpon>DataSet_SendProductTurning.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\DataSet_SendProductTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SendProductTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inventory\DataSet_SendProductTurning.xss">
+      <DependentUpon>DataSet_SendProductTurning.xsd</DependentUpon>
+    </None>
+    <None Include="KPI\DataSet_KPI.xsc">
+      <DependentUpon>DataSet_KPI.xsd</DependentUpon>
+    </None>
+    <None Include="KPI\DataSet_KPI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_KPI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="KPI\DataSet_KPI.xss">
+      <DependentUpon>DataSet_KPI.xsd</DependentUpon>
+    </None>
+    <None Include="KPI\DataSet_Stock.xsc">
+      <DependentUpon>DataSet_Stock.xsd</DependentUpon>
+    </None>
+    <None Include="KPI\DataSet_Stock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Stock.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="KPI\DataSet_Stock.xss">
+      <DependentUpon>DataSet_Stock.xsd</DependentUpon>
+    </None>
+    <None Include="MachineSettingChange\DataSet_MachineSettingChange.xsc">
+      <DependentUpon>DataSet_MachineSettingChange.xsd</DependentUpon>
+    </None>
+    <None Include="MachineSettingChange\DataSet_MachineSettingChange.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MachineSettingChange.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MachineSettingChange\DataSet_MachineSettingChange.xss">
+      <DependentUpon>DataSet_MachineSettingChange.xsd</DependentUpon>
+    </None>
+    <None Include="Machine\DataSet_Machine.xsc">
+      <DependentUpon>DataSet_Machine.xsd</DependentUpon>
+    </None>
+    <None Include="Machine\DataSet_Machine.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Machine.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Machine\DataSet_Machine.xss">
+      <DependentUpon>DataSet_Machine.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_InventoryPiecesForManager.xsc">
+      <DependentUpon>DataSet_InventoryPiecesForManager.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_InventoryPiecesForManager.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InventoryPiecesForManager.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManagerReport\DataSet_InventoryPiecesForManager.xss">
+      <DependentUpon>DataSet_InventoryPiecesForManager.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_ManagerReport.xsc">
+      <DependentUpon>DataSet_ManagerReport.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_ManagerReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ManagerReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManagerReport\DataSet_ManagerReport.xss">
+      <DependentUpon>DataSet_ManagerReport.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_PiecesProuductForManager_R.xsc">
+      <DependentUpon>DataSet_PiecesProuductForManager_R.xsd</DependentUpon>
+    </None>
+    <None Include="ManagerReport\DataSet_PiecesProuductForManager_R.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PiecesProuductForManager_R.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManagerReport\DataSet_PiecesProuductForManager_R.xss">
+      <DependentUpon>DataSet_PiecesProuductForManager_R.xsd</DependentUpon>
+    </None>
+    <None Include="Marquee\DataSet_Marquee.xsc">
+      <DependentUpon>DataSet_Marquee.xsd</DependentUpon>
+    </None>
+    <None Include="Marquee\DataSet_Marquee.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Marquee.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Marquee\DataSet_Marquee.xss">
+      <DependentUpon>DataSet_Marquee.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialLocation\DataSet_MaterialLocation.xsc">
+      <DependentUpon>DataSet_MaterialLocation.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialLocation\DataSet_MaterialLocation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MaterialLocation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MaterialLocation\DataSet_MaterialLocation.xss">
+      <DependentUpon>DataSet_MaterialLocation.xsd</DependentUpon>
+    </None>
+    <None Include="Message\DataSet_Message.xsc">
+      <DependentUpon>DataSet_Message.xsd</DependentUpon>
+    </None>
+    <None Include="Message\DataSet_Message.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Message.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Message\DataSet_Message.xss">
+      <DependentUpon>DataSet_Message.xsd</DependentUpon>
+    </None>
+    <None Include="Model\DataSet_Model.xsc">
+      <DependentUpon>DataSet_Model.xsd</DependentUpon>
+    </None>
+    <None Include="Model\DataSet_Model.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Model.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Model\DataSet_Model.xss">
+      <DependentUpon>DataSet_Model.xsd</DependentUpon>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime.xsc">
+      <DependentUpon>DataSet_MoldingDownTime.xsd</DependentUpon>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MoldingDownTime.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime.xss">
+      <DependentUpon>DataSet_MoldingDownTime.xsd</DependentUpon>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime_R.xsc">
+      <DependentUpon>DataSet_MoldingDownTime_R.xsd</DependentUpon>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime_R.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MoldingDownTime_R.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MoldingDownTime\DataSet_MoldingDownTime_R.xss">
+      <DependentUpon>DataSet_MoldingDownTime_R.xsd</DependentUpon>
+    </None>
+    <None Include="Mold\DataSet_Mold.xsc">
+      <DependentUpon>DataSet_Mold.xsd</DependentUpon>
+    </None>
+    <None Include="Mold\DataSet_Mold.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Mold.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Mold\DataSet_Mold.xss">
+      <DependentUpon>DataSet_Mold.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_BalanceBeginningMuscle.xsc">
+      <DependentUpon>DataSet_BalanceBeginningMuscle.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_BalanceBeginningMuscle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_BalanceBeginningMuscle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MuscleProduct\DataSet_BalanceBeginningMuscle.xss">
+      <DependentUpon>DataSet_BalanceBeginningMuscle.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleINV.xsc">
+      <DependentUpon>DataSet_MuscleINV.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleINV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MuscleINV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleINV.xss">
+      <DependentUpon>DataSet_MuscleINV.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleProduct.xsc">
+      <DependentUpon>DataSet_MuscleProduct.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleProduct.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MuscleProduct.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleProduct.xss">
+      <DependentUpon>DataSet_MuscleProduct.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleSend.xsc">
+      <DependentUpon>DataSet_MuscleSend.xsd</DependentUpon>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleSend.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MuscleSend.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MuscleProduct\DataSet_MuscleSend.xss">
+      <DependentUpon>DataSet_MuscleSend.xsd</DependentUpon>
+    </None>
+    <None Include="NesPrcSPC\DataSet_NesPrcSpc.xsc">
+      <DependentUpon>DataSet_NesPrcSpc.xsd</DependentUpon>
+    </None>
+    <None Include="NesPrcSPC\DataSet_NesPrcSpc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_NesPrcSpc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NesPrcSPC\DataSet_NesPrcSpc.xss">
+      <DependentUpon>DataSet_NesPrcSpc.xsd</DependentUpon>
+    </None>
+    <None Include="NonConforming\DataSet_NonConforming.xsc">
+      <DependentUpon>DataSet_NonConforming.xsd</DependentUpon>
+    </None>
+    <None Include="NonConforming\DataSet_NonConforming.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_NonConforming.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NonConforming\DataSet_NonConforming.xss">
+      <DependentUpon>DataSet_NonConforming.xsd</DependentUpon>
+    </None>
+    <None Include="Object\DataSet_Object.xsc">
+      <DependentUpon>DataSet_Object.xsd</DependentUpon>
+    </None>
+    <None Include="Object\DataSet_Object.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Object.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Object\DataSet_Object.xss">
+      <DependentUpon>DataSet_Object.xsd</DependentUpon>
+    </None>
+    <None Include="OverTime\DataSet_OverTime.xsc">
+      <DependentUpon>DataSet_OverTime.xsd</DependentUpon>
+    </None>
+    <None Include="OverTime\DataSet_OverTime.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_OverTime.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="OverTime\DataSet_OverTime.xss">
+      <DependentUpon>DataSet_OverTime.xsd</DependentUpon>
+    </None>
+    <None Include="Person\DataSet_PersonInfo.xsc">
+      <DependentUpon>DataSet_PersonInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Person\DataSet_PersonInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PersonInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Person\DataSet_PersonInfo.xss">
+      <DependentUpon>DataSet_PersonInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Person\DataSet_PersonIO.xsc">
+      <DependentUpon>DataSet_PersonIO.xsd</DependentUpon>
+    </None>
+    <None Include="Person\DataSet_PersonIO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PersonIO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Person\DataSet_PersonIO.xss">
+      <DependentUpon>DataSet_PersonIO.xsd</DependentUpon>
+    </None>
+    <None Include="PiecesCorrectiveMachining\PiecesCorrectiveMachining.xsc">
+      <DependentUpon>PiecesCorrectiveMachining.xsd</DependentUpon>
+    </None>
+    <None Include="PiecesCorrectiveMachining\PiecesCorrectiveMachining.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PiecesCorrectiveMachining.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PiecesCorrectiveMachining\PiecesCorrectiveMachining.xss">
+      <DependentUpon>PiecesCorrectiveMachining.xsd</DependentUpon>
+    </None>
+    <None Include="Pieces\DataSet_Pieces.xsc">
+      <DependentUpon>DataSet_Pieces.xsd</DependentUpon>
+    </None>
+    <None Include="Pieces\DataSet_Pieces.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Pieces.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Pieces\DataSet_Pieces.xss">
+      <DependentUpon>DataSet_Pieces.xsd</DependentUpon>
+    </None>
+    <None Include="Poem\DataSet_Poem.xsc">
+      <DependentUpon>DataSet_Poem.xsd</DependentUpon>
+    </None>
+    <None Include="Poem\DataSet_Poem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Poem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Poem\DataSet_Poem.xss">
+      <DependentUpon>DataSet_Poem.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSample.xsc">
+      <DependentUpon>DataSet_ProcurmentMaterialSample.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSample.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentMaterialSample.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSample.xss">
+      <DependentUpon>DataSet_ProcurmentMaterialSample.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSampleReceipt.xsc">
+      <DependentUpon>DataSet_ProcurmentMaterialSampleReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSampleReceipt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentMaterialSampleReceipt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialSampleReceipt.xss">
+      <DependentUpon>DataSet_ProcurmentMaterialSampleReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTest.xsc">
+      <DependentUpon>DataSet_ProcurmentMaterialTest.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentMaterialTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTest.xss">
+      <DependentUpon>DataSet_ProcurmentMaterialTest.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialToMachining.xsc">
+      <DependentUpon>DataSet_ProcurmentMaterialToMachining.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialToMachining.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentMaterialToMachining.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialToMachining.xss">
+      <DependentUpon>DataSet_ProcurmentMaterialToMachining.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTurning.xsc">
+      <DependentUpon>DataSet_ProcurmentMaterialTurning.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentMaterialTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentMaterialTurning.xss">
+      <DependentUpon>DataSet_ProcurmentMaterialTurning.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentSalesProduct.xsc">
+      <DependentUpon>DataSet_ProcurmentSalesProduct.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentSalesProduct.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentSalesProduct.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentSalesProduct.xss">
+      <DependentUpon>DataSet_ProcurmentSalesProduct.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentScarbTest.xsc">
+      <DependentUpon>DataSet_ProcurmentScarbTest.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentScarbTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProcurmentScarbTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Procurement\DataSet_ProcurmentScarbTest.xss">
+      <DependentUpon>DataSet_ProcurmentScarbTest.xsd</DependentUpon>
+    </None>
+    <None Include="ProductOperation\DataSet_ProductOperation.xsc">
+      <DependentUpon>DataSet_ProductOperation.xsd</DependentUpon>
+    </None>
+    <None Include="ProductOperation\DataSet_ProductOperation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProductOperation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProductOperation\DataSet_ProductOperation.xss">
+      <DependentUpon>DataSet_ProductOperation.xsd</DependentUpon>
+    </None>
+    <None Include="ProductPlanning\DataSet_ProductPlanning.xsc">
+      <DependentUpon>DataSet_ProductPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="ProductPlanning\DataSet_ProductPlanning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProductPlanning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProductPlanning\DataSet_ProductPlanning.xss">
+      <DependentUpon>DataSet_ProductPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="ProductRepairRequest\DataSet_ProductRepairRequest.xsc">
+      <DependentUpon>DataSet_ProductRepairRequest.xsd</DependentUpon>
+    </None>
+    <None Include="ProductRepairRequest\DataSet_ProductRepairRequest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProductRepairRequest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProductRepairRequest\DataSet_ProductRepairRequest.xss">
+      <DependentUpon>DataSet_ProductRepairRequest.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection.xsc">
+      <DependentUpon>DataSet_PruductInspection.xsd</DependentUpon>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PruductInspection.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection.xss">
+      <DependentUpon>DataSet_PruductInspection.xsd</DependentUpon>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspectionMachining_Report.xsc">
+      <DependentUpon>DataSet_PruductInspectionMachining_Report.xsd</DependentUpon>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspectionMachining_Report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PruductInspectionMachining_Report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspectionMachining_Report.xss">
+      <DependentUpon>DataSet_PruductInspectionMachining_Report.xsd</DependentUpon>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection_Chart.xsc">
+      <DependentUpon>DataSet_PruductInspection_Chart.xsd</DependentUpon>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection_Chart.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PruductInspection_Chart.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QualityControl\DataSet_PruductInspection_Chart.xss">
+      <DependentUpon>DataSet_PruductInspection_Chart.xsd</DependentUpon>
+    </None>
+    <None Include="RegEntExit\DataSet_RegEntExit.xsc">
+      <DependentUpon>DataSet_RegEntExit.xsd</DependentUpon>
+    </None>
+    <None Include="RegEntExit\DataSet_RegEntExit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RegEntExit.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RegEntExit\DataSet_RegEntExit.xss">
+      <DependentUpon>DataSet_RegEntExit.xsd</DependentUpon>
+    </None>
+    <None Include="Register\DataSet_User.xsc">
+      <DependentUpon>DataSet_User.xsd</DependentUpon>
+    </None>
+    <None Include="Register\DataSet_User.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_User.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Register\DataSet_User.xss">
+      <DependentUpon>DataSet_User.xsd</DependentUpon>
+    </None>
+    <None Include="Reproduct\DataSet_Reproduct.xsc">
+      <DependentUpon>DataSet_Reproduct.xsd</DependentUpon>
+    </None>
+    <None Include="Reproduct\DataSet_Reproduct.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Reproduct.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reproduct\DataSet_Reproduct.xss">
+      <DependentUpon>DataSet_Reproduct.xsd</DependentUpon>
+    </None>
+    <None Include="RequestITService\DataSet_RequestItService.xsc">
+      <DependentUpon>DataSet_RequestItService.xsd</DependentUpon>
+    </None>
+    <None Include="RequestITService\DataSet_RequestItService.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RequestItService.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RequestITService\DataSet_RequestItService.xss">
+      <DependentUpon>DataSet_RequestItService.xsd</DependentUpon>
+    </None>
+    <None Include="RequestObject\DataSet_RequestObject.xsc">
+      <DependentUpon>DataSet_RequestObject.xsd</DependentUpon>
+    </None>
+    <None Include="RequestObject\DataSet_RequestObject.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_RequestObject.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RequestObject\DataSet_RequestObject.xss">
+      <DependentUpon>DataSet_RequestObject.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlan.xsc">
+      <DependentUpon>DataSet_SalePlan.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SalePlan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlan.xss">
+      <DependentUpon>DataSet_SalePlan.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanLicense.xsc">
+      <DependentUpon>DataSet_SalePlanLicense.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanLicense.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SalePlanLicense.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanLicense.xss">
+      <DependentUpon>DataSet_SalePlanLicense.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanTurning.xsc">
+      <DependentUpon>DataSet_SalePlanTurning.xsd</DependentUpon>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SalePlanTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SalePlan\DataSet_SalePlanTurning.xss">
+      <DependentUpon>DataSet_SalePlanTurning.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandDailyReport.xsc">
+      <DependentUpon>DataSet_SandDailyReport.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandDailyReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SandDailyReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sand\DataSet_SandDailyReport.xss">
+      <DependentUpon>DataSet_SandDailyReport.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandMaterialUsage.xsc">
+      <DependentUpon>DataSet_SandMaterialUsage.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandMaterialUsage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SandMaterialUsage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sand\DataSet_SandMaterialUsage.xss">
+      <DependentUpon>DataSet_SandMaterialUsage.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandWeeklyTest.xsc">
+      <DependentUpon>DataSet_SandWeeklyTest.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SandWeeklyTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SandWeeklyTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sand\DataSet_SandWeeklyTest.xss">
+      <DependentUpon>DataSet_SandWeeklyTest.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SPC.xsc">
+      <DependentUpon>DataSet_SPC.xsd</DependentUpon>
+    </None>
+    <None Include="Sand\DataSet_SPC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SPC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sand\DataSet_SPC.xss">
+      <DependentUpon>DataSet_SPC.xsd</DependentUpon>
+    </None>
+    <None Include="ScarbUsage\DataSet_ScarbUsage.xsc">
+      <DependentUpon>DataSet_ScarbUsage.xsd</DependentUpon>
+    </None>
+    <None Include="ScarbUsage\DataSet_ScarbUsage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ScarbUsage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ScarbUsage\DataSet_ScarbUsage.xss">
+      <DependentUpon>DataSet_ScarbUsage.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\DataSet_Schedule.xsc">
+      <DependentUpon>DataSet_Schedule.xsd</DependentUpon>
+    </None>
+    <None Include="Schedule\DataSet_Schedule.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Schedule.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schedule\DataSet_Schedule.xss">
+      <DependentUpon>DataSet_Schedule.xsd</DependentUpon>
+    </None>
+    <None Include="Section\DataSet_Section.xsc">
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </None>
+    <None Include="Section\DataSet_Section.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Section.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Section\DataSet_Section.xss">
+      <DependentUpon>DataSet_Section.xsd</DependentUpon>
+    </None>
+    <None Include="SendProductInspectionMachining\DataSet_SendProductInspectionMachining.xsc">
+      <DependentUpon>DataSet_SendProductInspectionMachining.xsd</DependentUpon>
+    </None>
+    <None Include="SendProductInspectionMachining\DataSet_SendProductInspectionMachining.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SendProductInspectionMachining.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SendProductInspectionMachining\DataSet_SendProductInspectionMachining.xss">
+      <DependentUpon>DataSet_SendProductInspectionMachining.xsd</DependentUpon>
+    </None>
+    <None Include="SendProductToTurning\DataSet_SendProductToTurning.xsc">
+      <DependentUpon>DataSet_SendProductToTurning.xsd</DependentUpon>
+    </None>
+    <None Include="SendProductToTurning\DataSet_SendProductToTurning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SendProductToTurning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SendProductToTurning\DataSet_SendProductToTurning.xss">
+      <DependentUpon>DataSet_SendProductToTurning.xsd</DependentUpon>
+    </None>
+    <None Include="ShotBlasting\DataSet_ShotBlasting.xsc">
+      <DependentUpon>DataSet_ShotBlasting.xsd</DependentUpon>
+    </None>
+    <None Include="ShotBlasting\DataSet_ShotBlasting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ShotBlasting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ShotBlasting\DataSet_ShotBlasting.xss">
+      <DependentUpon>DataSet_ShotBlasting.xsd</DependentUpon>
+    </None>
+    <None Include="State\DataSet_State.xsc">
+      <DependentUpon>DataSet_State.xsd</DependentUpon>
+    </None>
+    <None Include="State\DataSet_State.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_State.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="State\DataSet_State.xss">
+      <DependentUpon>DataSet_State.xsd</DependentUpon>
+    </None>
+    <None Include="Status\DataSet_Status.xsc">
+      <DependentUpon>DataSet_Status.xsd</DependentUpon>
+    </None>
+    <None Include="Status\DataSet_Status.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Status.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Status\DataSet_Status.xss">
+      <DependentUpon>DataSet_Status.xsd</DependentUpon>
+    </None>
+    <None Include="TimeLine\DataSet_TimeLineMachine.xsc">
+      <DependentUpon>DataSet_TimeLineMachine.xsd</DependentUpon>
+    </None>
+    <None Include="TimeLine\DataSet_TimeLineMachine.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_TimeLineMachine.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TimeLine\DataSet_TimeLineMachine.xss">
+      <DependentUpon>DataSet_TimeLineMachine.xsd</DependentUpon>
+    </None>
+    <None Include="Tools\DataSet_Tools.xsc">
+      <DependentUpon>DataSet_Tools.xsd</DependentUpon>
+    </None>
+    <None Include="Tools\DataSet_Tools.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Tools.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Tools\DataSet_Tools.xss">
+      <DependentUpon>DataSet_Tools.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_PerFoodStatus.xsc">
+      <DependentUpon>DataSet_PerFoodStatus.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_PerFoodStatus.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PerFoodStatus.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinKart\DataSet_PerFoodStatus.xss">
+      <DependentUpon>DataSet_PerFoodStatus.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_PerInfo.xsc">
+      <DependentUpon>DataSet_PerInfo.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_PerInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_PerInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinKart\DataSet_PerInfo.xss">
+      <DependentUpon>DataSet_PerInfo.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_Winkart.xsc">
+      <DependentUpon>DataSet_Winkart.xsd</DependentUpon>
+    </None>
+    <None Include="WinKart\DataSet_Winkart.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Winkart.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinKart\DataSet_Winkart.xss">
+      <DependentUpon>DataSet_Winkart.xsd</DependentUpon>
+    </None>
+    <None Include="WorkHour\DataSet_WorkHour.xsc">
+      <DependentUpon>DataSet_WorkHour.xsd</DependentUpon>
+    </None>
+    <None Include="WorkHour\DataSet_WorkHour.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_WorkHour.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WorkHour\DataSet_WorkHour.xss">
+      <DependentUpon>DataSet_WorkHour.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+    <Folder Include="PearsonCorrelation\" />
+    <Folder Include="Standard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DestructionReport\DataClasses_DestractionReport.dbml.layout">
+      <DependentUpon>DataClasses_DestractionReport.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

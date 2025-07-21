@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="DatalinqchecklistDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.65;Initial Catalog=payazobnet;Persist Security Info=True;User ID=saa" SettingsObjectName="PAYADATA.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.mchecklistheader" Member="mchecklistheaders">
+    <Type Name="mchecklistheader">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xdate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="xtime" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="xdevicecod" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xdevicenumber" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="xnote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xidusersupervisor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xconfirmsupervisor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="xidusernetsupervisor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xconfirmnetsupervisor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mchecklistdetails" Member="mchecklistdetails">
+    <Type Name="mchecklistdetail">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidchecklistheader" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidchecklistitem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidstate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mchecklistcontroler" Member="mchecklistcontrolers">
+    <Type Name="mchecklistcontroler">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xidcontroler" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="xidchecklistheader" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mchecklistitem" Member="mchecklistitems">
+    <Type Name="mchecklistitem">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xdevicecod" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xitemreview" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mchecklistgroupcontroler" Member="mchecklistgroupcontrolers">
+    <Type Name="mchecklistgroupcontroler">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xnamegropcontroloer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mchecklistitem" Member="mchecklistitemcatgroys">
+    <Type Name="mchecklistitemcatgroy">
+      <Column Name="xid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xdevicecod" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="xitemreview" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

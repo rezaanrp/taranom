@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Data_interup_truble">
+  <DataContextMoniker Name="/Data_interup_trubleDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7d6baf69-7484-4479-b0e1-d8f049af3f24" absoluteBounds="3.75, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Data_interup_trubleDataContext/ttruble_shooting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b260470-e2d2-42d0-b234-768f881db650" absoluteBounds="3.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3493046-5f73-4d8d-9ff9-bcd6240bce0a" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/Data_interup_trubleDataContext/tsolutionfortruble" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2b8c864-29f1-48fc-be59-a1f54de512bb" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5fc03a9-194f-4fd5-b50b-a79c46a6a9a2" absoluteBounds="0.875, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Data_interup_trubleDataContext/mselectedtrubleshooting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9ce1fcb-adf7-4cec-9b12-2c28c3f9e963" absoluteBounds="0.89, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.44931705603966 : 2.2612939453125); (4.44931705603966 : 2.5112939453125); (5.06500117938702 : 2.5112939453125); (5.06500117938702 : 2.2612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Data_interup_trubleDataContext/ttruble_shooting/ttruble_shooting_ttruble_shooting" />
+      <nodes>
+        <classShapeMoniker Id="7d6baf69-7484-4479-b0e1-d8f049af3f24" />
+        <classShapeMoniker Id="7d6baf69-7484-4479-b0e1-d8f049af3f24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45552987154447 : 2.52089680989583); (1.45552987154447 : 2.77089680989583); (2.05849251552484 : 2.77089680989583); (2.05849251552484 : 2.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Data_interup_trubleDataContext/tsolutionfortruble/tsolutionfortruble_tsolutionfortruble" />
+      <nodes>
+        <classShapeMoniker Id="c3493046-5f73-4d8d-9ff9-bcd6240bce0a" />
+        <classShapeMoniker Id="c3493046-5f73-4d8d-9ff9-bcd6240bce0a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

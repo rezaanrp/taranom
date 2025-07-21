@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="payazobnet" Class="kwhlinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.15.33\EQLSERVERFINAL;Initial Catalog=payazobnet;Persist Security Info=True;User ID=sa" SettingsObjectName="PAYAIND.Properties.Settings" SettingsPropertyName="payazobnetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.masraf_zob" Member="masraf_zobs">
+    <Type Name="masraf_zob">
+      <Column Name="data" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="shift" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="kwh" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="zob" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="kwhpzob" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.masraf_day" Member="masraf_days">
+    <Type Name="masraf_day">
+      <Column Name="date" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="kwh" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="pro" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="kwhppro" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="nameghete" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

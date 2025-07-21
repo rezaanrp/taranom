@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PayazobModelAid.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="PayazobModelAidStoreContainer">
+          <EntitySet Name="mGenGroup" EntityType="PayazobModelAid.Store.mGenGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mPersonInfo" EntityType="PayazobModelAid.Store.mPersonInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="mSectionAid" EntityType="PayazobModelAid.Store.mSectionAid" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_mPersonInfo_mGenGroup" Association="PayazobModelAid.Store.FK_mPersonInfo_mGenGroup">
+            <End Role="mGenGroup" EntitySet="mGenGroup" />
+            <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mPersonInfo_mGenGroup1" Association="PayazobModelAid.Store.FK_mPersonInfo_mGenGroup1">
+            <End Role="mGenGroup" EntitySet="mGenGroup" />
+            <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mSectionAid_mGenGroup" Association="PayazobModelAid.Store.FK_mSectionAid_mGenGroup">
+            <End Role="mGenGroup" EntitySet="mGenGroup" />
+            <End Role="mSectionAid" EntitySet="mSectionAid" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mGenGroup">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="xType" Type="nvarchar" MaxLength="10" />
+          <Property Name="xName" Type="nvarchar" MaxLength="50" />
+          <Property Name="xComment" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="mPersonInfo">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="xName" Type="nvarchar" MaxLength="50" />
+          <Property Name="xFamily" Type="nvarchar" MaxLength="50" />
+          <Property Name="xPerID" Type="nchar" MaxLength="10" />
+          <Property Name="xEmail" Type="varchar" MaxLength="100" />
+          <Property Name="xSex_" Type="int" />
+          <Property Name="xNationalCode" Type="char" MaxLength="10" />
+          <Property Name="xAddress" Type="nvarchar" MaxLength="300" />
+          <Property Name="xMob" Type="varchar" MaxLength="50" />
+          <Property Name="xTel" Type="varchar" MaxLength="50" />
+          <Property Name="xFatherName" Type="nvarchar" MaxLength="50" />
+          <Property Name="xIdentity" Type="nchar" MaxLength="10" />
+          <Property Name="xActive" Type="bit" />
+          <Property Name="xSection_" Type="int" />
+        </EntityType>
+        <EntityType Name="mSectionAid">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Name="x_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="xName" Type="nvarchar" MaxLength="50" />
+          <Property Name="xGenGroup_" Type="int" />
+        </EntityType>
+        <Association Name="FK_mPersonInfo_mGenGroup">
+          <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+          <End Role="mPersonInfo" Type="PayazobModelAid.Store.mPersonInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mPersonInfo">
+              <PropertyRef Name="xSection_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mPersonInfo_mGenGroup1">
+          <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+          <End Role="mPersonInfo" Type="PayazobModelAid.Store.mPersonInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mPersonInfo">
+              <PropertyRef Name="xSex_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mSectionAid_mGenGroup">
+          <End Role="mGenGroup" Type="PayazobModelAid.Store.mGenGroup" Multiplicity="0..1" />
+          <End Role="mSectionAid" Type="PayazobModelAid.Store.mSectionAid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mSectionAid">
+              <PropertyRef Name="xGenGroup_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PayazobModelAid" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PayazobEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="mSectionAids" EntityType="PayazobModelAid.mSectionAid" />
+          <EntitySet Name="mGenGroups" EntityType="PayazobModelAid.mGenGroup" />
+          <AssociationSet Name="FK_mSectionAid_mGenGroup" Association="PayazobModelAid.FK_mSectionAid_mGenGroup">
+            <End Role="mGenGroup" EntitySet="mGenGroups" />
+            <End Role="mSectionAid" EntitySet="mSectionAids" />
+          </AssociationSet>
+          <EntitySet Name="mPersonInfoes" EntityType="PayazobModelAid.mPersonInfo" />
+          <AssociationSet Name="FK_mPersonInfo_mGenGroup" Association="PayazobModelAid.FK_mPersonInfo_mGenGroup">
+            <End Role="mGenGroup" EntitySet="mGenGroups" />
+            <End Role="mPersonInfo" EntitySet="mPersonInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mPersonInfo_mGenGroup1" Association="PayazobModelAid.FK_mPersonInfo_mGenGroup1">
+            <End Role="mGenGroup" EntitySet="mGenGroups" />
+            <End Role="mPersonInfo" EntitySet="mPersonInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mSectionAid">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Name="x_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="xName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="xGenGroup_" Type="Int32" />
+          <NavigationProperty Name="mGenGroup" Relationship="PayazobModelAid.FK_mSectionAid_mGenGroup" FromRole="mSectionAid" ToRole="mGenGroup" />
+        </EntityType>
+        <EntityType Name="mGenGroup">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Type="Int32" Name="x_" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="xType" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xComment" MaxLength="300" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mSectionAids" Relationship="PayazobModelAid.FK_mSectionAid_mGenGroup" FromRole="mGenGroup" ToRole="mSectionAid" />
+          <NavigationProperty Name="mPersonInfoes" Relationship="PayazobModelAid.FK_mPersonInfo_mGenGroup" FromRole="mGenGroup" ToRole="mPersonInfo" />
+          <NavigationProperty Name="mPersonInfoes1" Relationship="PayazobModelAid.FK_mPersonInfo_mGenGroup1" FromRole="mGenGroup" ToRole="mPersonInfo" />
+        </EntityType>
+        <Association Name="FK_mSectionAid_mGenGroup">
+          <End Type="PayazobModelAid.mGenGroup" Role="mGenGroup" Multiplicity="0..1" />
+          <End Type="PayazobModelAid.mSectionAid" Role="mSectionAid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mSectionAid">
+              <PropertyRef Name="xGenGroup_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="mPersonInfo">
+          <Key>
+            <PropertyRef Name="x_" />
+          </Key>
+          <Property Type="Int32" Name="x_" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="xName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xFamily" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xPerID" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="xEmail" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="xSex_" />
+          <Property Type="String" Name="xNationalCode" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="xAddress" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xMob" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="xTel" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="xFatherName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="xIdentity" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Boolean" Name="xActive" />
+          <Property Type="Int32" Name="xSection_" />
+          <NavigationProperty Name="mGenGroup" Relationship="PayazobModelAid.FK_mPersonInfo_mGenGroup" FromRole="mPersonInfo" ToRole="mGenGroup" />
+          <NavigationProperty Name="mGenGroup1" Relationship="PayazobModelAid.FK_mPersonInfo_mGenGroup1" FromRole="mPersonInfo" ToRole="mGenGroup" />
+        </EntityType>
+        <Association Name="FK_mPersonInfo_mGenGroup">
+          <End Type="PayazobModelAid.mGenGroup" Role="mGenGroup" Multiplicity="0..1" />
+          <End Type="PayazobModelAid.mPersonInfo" Role="mPersonInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mPersonInfo">
+              <PropertyRef Name="xSection_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mPersonInfo_mGenGroup1">
+          <End Type="PayazobModelAid.mGenGroup" Role="mGenGroup" Multiplicity="0..1" />
+          <End Type="PayazobModelAid.mPersonInfo" Role="mPersonInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mGenGroup">
+              <PropertyRef Name="x_" />
+            </Principal>
+            <Dependent Role="mPersonInfo">
+              <PropertyRef Name="xSex_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PayazobModelAidStoreContainer" CdmEntityContainer="PayazobEntities1">
+          <EntitySetMapping Name="mSectionAids"><EntityTypeMapping TypeName="PayazobModelAid.mSectionAid"><MappingFragment StoreEntitySet="mSectionAid">
+            <ScalarProperty Name="x_" ColumnName="x_" />
+            <ScalarProperty Name="xName" ColumnName="xName" />
+            <ScalarProperty Name="xGenGroup_" ColumnName="xGenGroup_" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="mGenGroups">
+            <EntityTypeMapping TypeName="PayazobModelAid.mGenGroup">
+              <MappingFragment StoreEntitySet="mGenGroup">
+                <ScalarProperty Name="xComment" ColumnName="xComment" />
+                <ScalarProperty Name="xName" ColumnName="xName" />
+                <ScalarProperty Name="xType" ColumnName="xType" />
+                <ScalarProperty Name="x_" ColumnName="x_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mPersonInfoes">
+            <EntityTypeMapping TypeName="PayazobModelAid.mPersonInfo">
+              <MappingFragment StoreEntitySet="mPersonInfo">
+                <ScalarProperty Name="xSection_" ColumnName="xSection_" />
+                <ScalarProperty Name="xActive" ColumnName="xActive" />
+                <ScalarProperty Name="xIdentity" ColumnName="xIdentity" />
+                <ScalarProperty Name="xFatherName" ColumnName="xFatherName" />
+                <ScalarProperty Name="xTel" ColumnName="xTel" />
+                <ScalarProperty Name="xMob" ColumnName="xMob" />
+                <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+                <ScalarProperty Name="xNationalCode" ColumnName="xNationalCode" />
+                <ScalarProperty Name="xSex_" ColumnName="xSex_" />
+                <ScalarProperty Name="xEmail" ColumnName="xEmail" />
+                <ScalarProperty Name="xPerID" ColumnName="xPerID" />
+                <ScalarProperty Name="xFamily" ColumnName="xFamily" />
+                <ScalarProperty Name="xName" ColumnName="xName" />
+                <ScalarProperty Name="x_" ColumnName="x_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model_Aid">
+        <EntityTypeShape EntityType="PayazobModelAid.mSectionAid" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PayazobModelAid.mGenGroup" Width="1.5" PointX="3.25" PointY="0.75" Height="1.9802864583333335" />
+        <AssociationConnector Association="PayazobModelAid.FK_mSectionAid_mGenGroup" >
+          <ConnectorPoint PointX="3.25" PointY="1.6439925130208335" />
+          <ConnectorPoint PointX="2.25" PointY="1.6439925130208335" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="PayazobModelAid.mPersonInfo" Width="1.5" PointX="6.375" PointY="0.75" Height="4.0956022135416674" />
+        <AssociationConnector Association="PayazobModelAid.FK_mPersonInfo_mGenGroup" >
+          <ConnectorPoint PointX="4.75" PointY="1.9324446614583335" />
+          <ConnectorPoint PointX="6.375" PointY="1.9324446614583335" />
+        </AssociationConnector>
+        <AssociationConnector Association="PayazobModelAid.FK_mPersonInfo_mGenGroup1" >
+          <ConnectorPoint PointX="4.75" PointY="1.2787223307291669" />
+          <ConnectorPoint PointX="6.375" PointY="1.2787223307291669" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
