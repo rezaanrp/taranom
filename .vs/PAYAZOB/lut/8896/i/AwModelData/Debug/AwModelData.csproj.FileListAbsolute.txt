@@ -1,6 +1,0 @@
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\b\AwModelData\bin\Debug\AwModelData.dll.config
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\b\AwModelData\bin\Debug\AwModelData.dll
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\AwModelData\Debug\AwModelData.csprojAssemblyReference.cache
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\AwModelData\Debug\AwModelData.csproj.CoreCompileInputs.cache
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\AwModelData\Debug\AwModelData.csproj.CopyComplete
-D:\MIS\Pa0yazob000\.vs\PAYAZOB\lut\0\i\AwModelData\Debug\AwModelData.dll
